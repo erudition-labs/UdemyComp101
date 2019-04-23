@@ -1,0 +1,11 @@
+\contentsline {section}{\numberline {1}Pre-Chapter}{1}{section.1}% 
+\contentsline {subsection}{\numberline {1.1}What is a Program?}{1}{subsection.1.1}% 
+\contentsline {paragraph}{If you would like to just skip to the more useful stuff about what a program is, look for the next bold face paragraph.}{1}{section*.2}% 
+\contentsline {paragraph}{HELLO, If you were skipping over all that other stuff that I said you could, now is a good time to start paying attention.}{4}{section*.3}% 
+\contentsline {subsection}{\numberline {1.2}The Structure of a Java program}{4}{subsection.1.2}% 
+\contentsline {section}{\numberline {2}Basic Syntax (Video Series Lecture 1 and 2)}{5}{section.2}% 
+\contentsline {subsection}{\numberline {2.1}Keywords}{5}{subsection.2.1}% 
+\contentsline {section}{\numberline {3}Variables and Types (Video Series Lecture 3 and 4)}{7}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Java Types (Primitive Types and Strings)}{7}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}Variables}{9}{subsection.3.2}% 
+\contentsline {section}{\numberline {4}Math in Code (Video Series Lecture 5)}{10}{section.4}% 

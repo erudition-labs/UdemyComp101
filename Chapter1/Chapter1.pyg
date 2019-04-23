@@ -1,0 +1,40 @@
+.equ MAX, 		1000
+.equ SWI_PRINT_INT, 	0x6B		;Constants
+.equ SWI_PRINT_CHAR, 	0x00
+.equ ASCII_SPACE, 	0x20
+.equ EXIT, 		0x11
+
+_start:
+
+MOV r5, #1 				;loop counter
+MOV r6, #1 				;5 counter
+
+LoopCondition:
+	CMP R5, #MAX			;compare counter with 1000
+	BLE LoopBody			;choose address to load
+	BGT LoopDone
+
+LoopBody:
+	CMP R6, #5			;compare the 5 counter with 5
+	BLT IfPrint
+	BGE ElseReset
+
+	IfPrint:
+		MOV r1, r5		;move value for printing
+		MOV r0, #1		;swi stdout arg for printing
+		SWI SWI_PRINT_INT	;print integer to stdout
+
+		MOV r1, #ASCII_SPACE	;print a space between numbers
+		SWI SWI_PRINT_CHAR	;swi arg for printing a char
+		B Increment	
+	ElseReset:
+		MOV R6, #0		;reset 5 counter to 0
+
+	Increment:
+		ADD R5, R5, #1
+		ADD R6, R6, #1		;increment counters
+		B LoopCondition		;restart loop
+
+LoopDone:
+	SWI EXIT			;exit programi
+.end
