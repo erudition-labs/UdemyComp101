@@ -81,6 +81,50 @@ Computer Science 101: Introduction to Java and Algorithms\\
 \setcounter{page}{1}
 
 \section{Relational and Logical Operators (Video Series Lecture 7)}
+In this part of the series, we introduce the relational operators.  Interestingly enough, they are all the same operators that exist in basic mathematics. However, this would be our first experience with logic. By that I mean that it will be helpful here to start thinking of things in terms of true and false. For example, $1<2$ is a true statement. Whereas $5>1$ is a false statement. That`s all there really is to say about it.
+\subsection{The Relational Operators}
+\begin{center}
+  \begin{tabular}{ | c | c | c | c | c |}
+    \hline
+    Math Symbol & Programming Symbol & Definition & Example & Value \\ \hline
+    $>$ & $>$ & is greater than & $5$ $>$ $4$ & true \\ \hline
+    $\geq$ & $>=$ & is greater than or equal to & $5$ $>=$ $5$ & true \\ \hline
+    $<$ & $<$ & is less than & $4$ $<$ $10$ & false \\ \hline
+    $\leq$ & $<=$ & is less than or equal to & $5$ $<=$ $10$ & true \\ \hline
+    $=$ & $==$ & is equal to & $8$ $==$  $4$ & false \\ \hline
+    $\neq$ & $!=$ & is not equal to & $8$ $!=$  $4$ & true \\ 
+    \hline
+  \end{tabular}
+\end{center}
+
+Take note that in programming, we combine symbols such as $<=$ instead of $\leq$, why? Well simply because, do you see $\leq$ on your keyboard? If you do, then I have no idea what keyboard you are using. \\
+
+A more important one to note is the 	`equal to` operator. In mathematics we use $=$ as both assignment and to express an equality relation. In fact, we generally use them as one in the same. However, a computer needs to make a distinction due to additional things the compiler must do. In programming, we use $=$ as assignment. When we say 
+\begin{lstlisting}
+int a = 5;
+\end{lstlisting}
+what we are actually saying is, hey compiler, create a variable in memory with enough space to store an integer and store the value $5$ there. Now take the case, 
+\begin{lstlisting}
+int a = 5;
+int b =0;
+a = b;
+\end{lstlisting}
+
+Here we tell the compiler to again create the variable $a$ and store the value $5$ and then create the variable $b$ and store the value $0$. Then we are assigning the value that is stored in the variable $a$ into the variable $b$. That is, we are copying the value stored in variable $a$ into $b$. So when we try to ask the program, ``is $a$ equal to $b$`` we cannot use the $=$ symbol. If we did, the computer would think that we are trying to assign something. Instead we use the symbols $==$ to ask if something is equal. This will make more sense when we try to use these operators.\\
+
+\subsection{Logical Operators}
+The logical operators are directly rooted into propositional logic. What`s great is that we use these everyday, often without even realizing it.
+
+\begin{center}
+  \begin{tabular}{ | c | c | c | c | c |}
+    \hline
+    Logic & Programming Symbol & Definition & Example & Value \\ \hline
+    $\& (Conjunction)$ & $\&\&$ & AND & ($5==5$) $\&\&$ ($5!=10$) & true \\ \hline
+    $V (disjunction)$ & $||$ & OR & ($3==3$) $||$ ($5==3$) & true \\ \hline
+    $\lnot (negation)$ & $!$ & NOT &  $!(5 != 5)$ & true \\ 
+    \hline
+  \end{tabular}
+\end{center}
 \section{True and False (Video Series Lecture 8 and 9)}
 \section{if Statement (Video Series Lecture 10 and 11)}
 \section{if else and if else if Statements (Video Series Lecture 12 and 13)}
