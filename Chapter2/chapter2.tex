@@ -366,5 +366,81 @@ public class HelloWorld{
 \end{lstlisting}
 
 \section{if else and if else if Statements (Video Series Lecture 12 and 13)}
+\subsection{if else}
+Remember in the above section when i described the if statement as follows: ``if the condition is true, then execute the next block of code, but if the condition is false, don`t execute the next block of code.`` Well what if we want to do something if the condition fails. What if we could reword it as follows: ``if the condition is true, then execute the next block of code, but if the condition is false, don`t execute the next block of code, but instead execute this other block of code``. What if we have a bunch of if statements and none of them pass, should we just do nothing? Or can we do something in the case that all conditions are evaluated to false?\\
+
+In comes the if-else statement. It is literally translated as, if the condition is true, execute this code block, otherwise, execute this other code block.
+
+\begin{lstlisting}
+if(SOME_CONDITION) {
+    // DO THIS STUFF
+} else {
+    //IF NONE OF THE CONDITIONS ARE TRUE
+    //THEN DO THIS STUFF
+}
+\end{lstlisting}
+
+If we go back to the banking system idea where we only want to allow a user to take out money that they actually have in the bank, we can use an if statement to check if the funds are available. If they are, then execute give them their money, otherwise, notify them that they do not have the funds.
+\begin{lstlisting}
+if(accountBalance > withdrawRequestAmount) {
+    // Give them their money
+} else {
+	// HEY, YOU HAVE NO MONEY TO TAKE OUT
+}
+\end{lstlisting}
+
+\subsection{if-else if-else}
+Let`s continue with our really dumb bank example. Check out this code:
+
+\begin{lstlisting}
+public class Bank {
+
+     public static void main(String []args){
+        int accountAmount = 1000;
+        int withdrawRequestAmount = 1000;
+        
+        if(accountAmount > withdrawRequestAmount) {
+            System.out.println("Heres your money");
+        } else {
+            System.out.println("GET A JOB, YOU NEED MONEY");
+        }
+        
+        if(accountAmount == withdrawRequestAmount) {
+            System.out.println("Heres your money");
+        } else {
+            System.out.println("GET A JOB, YOU NEED MONEY");
+        }
+     }
+}
+\end{lstlisting}
+
+The first two lines of our main method, we just initialize accountAmount and withdrawRequestAmount to $\$1000$. That`s how much I have at the bank and just so happens to be how much I want to take out of the bank. The first if statement will print ``GET A JOB, YOU NEED MONEY`` because accountAmount is not greater than withdrawRequestAmount. Since the if statement evaluates to false, my else block gets executed. The second if statement checks if they are equal and in this case they are, so it prints ``Here`s your money``.  \\
+
+Now wait a second. First the bank to tells me to get a job because I don`t have enough money, and then it gives me my money? What is going on? Since these are all separate if statements, each one gets checked every single time the main method runs. Also note that I have put the same else block for all of my if statements.\\
+
+But what if I just want to check if statements and stop checking them once one is true. Or what if I want to use the same else statement for all the if statements, but I don`t want to write it over and over. And how do I stop my program from printing those two outputs when I only want one.\\
+
+In comes the if-else if-else statement. With these statements, the program will go through the if statements until one of them is true, and then it will skip the rest. If none of them are true, then it will execute the else block, which you only need to write once.\\
+
+We can refactor the code to take advantage of if-else if-else statements.
+\begin{lstlisting}
+public class Bank {
+
+     public static void main(String []args){
+        int accountAmount = 1000;
+        int withdrawRequestAmount = 1000;
+        
+        if(accountAmount > withdrawRequestAmount) {
+            System.out.println("Heres your money");
+        } else if(accountAmount == withdrawRequestAmount) {
+            System.out.println("Heres your money, you have none left now");
+        } else {
+            System.out.println("GET A JOB, YOU NEED MONEY");
+        }
+     }
+}
+\end{lstlisting}
+We have the same setup as before, accountAmount and withdrawRequestAmount are initialized to $\$1000$.
+The if statement evaluates to false, so it goes to the else if statement, which evaluates to true, so it prints out ``Heres your money, you have none left now`` and then skips the else. Note that we can have as many else if statements as we want. Once the program finds one that is true, it will skip the rest.
 \section{switch Statement (Video Series Lecture 14 and 15)}
 \end{document}
