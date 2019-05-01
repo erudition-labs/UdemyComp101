@@ -258,6 +258,70 @@ Now evaluate these statements \\
  We can again consult the truth table to see that (false $||$ true) is true.\\
  
  Therefore, ((($i$ $!=$ $5$) $||$ ($i$ $==$ $10$)) $||$ $i$ $<=$ $5$) evaluates to true.
+ 
+ \subsubsection{NOT}
+ In propositional logic, NOT is the equivalent to the negation. Another way to think of this is ``the opposite of``. Obviously not true is false and not false is true, so the truth table looks like:\\
+ 
+  \begin{center}
+  \begin{tabular}{ | c | c |}
+    \hline
+    A & !A  \\ \hline
+    false & true\\ \hline
+    true & false\\ 
+    \hline
+  \end{tabular}
+\end{center}
+
+It`s sort of like saying a statement and then pausing at the end and saying ``just kidding!``. Like this, ``Fire is cold...JUST KIDDING``, we just took a false statement and made it true.
+
+\begin{center}
+  \begin{tabular}{ | c | c | c | p{4.5cm} |}
+    \hline
+		Statement A  & !A & value & Explanation \\ \hline
+		Fire is cold & Fire is cold...NOT & true & We know fire is not cold, but we want the opposite value\\  \hline
+		
+		Fire is hot & Fire is hot...NOT & false & We know fire is hot, but we want the opposite value\\ \hline		
+  \end{tabular}
+\end{center}
+
+Let`s see if we can make our example using the OR`s false by using NOT\\
+((($i$ $!=$ $5$) $||$ ($i$ $==$ $10$)) $||$ $i$ $<=$ $5$)\\
+
+First identify the order, we must do the inner parenthesis first.\\
+(($i$ $!=$ $5$) $||$ ($i$ $==$ $10$))\\
+Now we need to identify the statements\\
+($i$ $!=$ $5$) or ($i$ $==$ $10$) \\
+Now evaluate these statements \\
+($i$ $!=$ $5$) is false\\
+ ($i$ $==$ $10$) is false \\
+ So, (($i$ $!=$ $5$) $||$ ($i$ $==$ $10$)) is equivalent to ((false) $||$ (false)).\\
+ We can consult the Truth table to see that (($i$ $!=$ $5$) $||$ ($i$ $==$ $10$)) is false\\
+ 
+ Now we have a disjunction of (false $||$ ($i$ $<=$ $5$))\\
+ we know that ($i$ $<=$ $5$) is true \\
+ So, we have reduced ((($i$ $!=$ $5$) $||$ ($i$ $==$ $10$)) $||$ $i$ $<=$ $5$) to (false $||$ true)\\
+ We can again consult the truth table to see that (false $||$ true) is true.\\
+ 
+ Therefore, ((($i$ $!=$ $5$) $||$ ($i$ $==$ $10$)) $||$ $i$ $<=$ $5$) evaluates to true.\\
+ 
+ To make the whole disjunction false, we need to make the second statement false. So, what if we change the expression to \\
+ ((($i$ $!=$ $5$) $||$ ($i$ $==$ $10$)) $||$ !($i$ $<=$ $5$))\\
+ 
+ First identify the order, we must do the inner parenthesis first.\\
+(($i$ $!=$ $5$) $||$ ($i$ $==$ $10$))\\
+Now we need to identify the statements\\
+($i$ $!=$ $5$) or ($i$ $==$ $10$) \\
+Now evaluate these statements \\
+($i$ $!=$ $5$) is false\\
+ ($i$ $==$ $10$) is false \\
+ So, (($i$ $!=$ $5$) $||$ ($i$ $==$ $10$)) is equivalent to ((false) $||$ (false)).\\
+ We can consult the Truth table to see that (($i$ $!=$ $5$) $||$ ($i$ $==$ $10$)) is false\\
+ 
+ Now we have a disjunction of (false $||$ !($i$ $<=$ $5$))\\
+ we know that ($i$ $<=$ $5$) is true, so   !($i$ $<=$ $5$) must be false\\
+ So, we have reduced ((($i$ $!=$ $5$) $||$ ($i$ $==$ $10$)) $||$ !($i$ $<=$ $5$)) to (false $||$ false)\\
+ 
+ We can consult the OR truth table to see that false $||$ false is false.
 
 \section{True and False (Video Series Lecture 8 and 9)}
 \section{if Statement (Video Series Lecture 10 and 11)}
