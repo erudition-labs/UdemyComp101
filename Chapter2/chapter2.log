@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.3.9)  30 APR 2019 20:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.3.9)  30 APR 2019 20:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -619,24 +619,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 343--344
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 349.
-[8] [9]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 349.
+[8]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 370.
+ [9]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 370.
  (./chapter2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 349.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 349.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 370.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 370.
 Package rerunfilecheck Info: File `chapter2.out' has not changed.
 (rerunfilecheck)             Checksum: A093C1D2FC5ACF4792BD8681C8155192;892.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 349.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 370.
  ) 
 Here is how much of TeX's memory you used:
- 8774 strings out of 492616
- 121553 string characters out of 6135178
- 420592 words of memory out of 5000000
- 12551 multiletter control sequences out of 15000+600000
+ 8801 strings out of 492616
+ 121917 string characters out of 6135178
+ 422592 words of memory out of 5000000
+ 12559 multiletter control sequences out of 15000+600000
  8282 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 31i,13n,43p,727b,1138s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 31i,13n,43p,727b,1851s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/publi
@@ -644,10 +645,10 @@ c/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr
 /share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on chapter2.pdf (11 pages, 172788 bytes).
+Output written on chapter2.pdf (11 pages, 177244 bytes).
 PDF statistics:
- 165 PDF objects out of 1000 (max. 8388607)
- 141 compressed objects within 2 object streams
- 33 named destinations out of 1000 (max. 500000)
+ 189 PDF objects out of 1000 (max. 8388607)
+ 165 compressed objects within 2 object streams
+ 52 named destinations out of 1000 (max. 500000)
  102 words of extra memory for PDF output out of 10000 (max. 10000000)
 

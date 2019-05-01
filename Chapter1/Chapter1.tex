@@ -318,4 +318,24 @@ public class HelloWorld {
 
 \end{lstlisting}
 As you can see, if you are familiar with basic arithmetic, then you can also do it in code.
+
+\subsubsection{A Note about $\%$}
+This may be a little advanced unless you have taken a Discrete Mathematical Structures class or studied number theory on your own. For most people, knowing that the modulus operator will give you the remainder of integer division is enough. So feel free to skip this. For those that want to know more, read on.\\
+
+The modulus operator comes from number theory when we are talking about equivalence relations and congruences. The technical definition of $\%$ (math use (mod) so I will be switching to the mathematical notation) is:\\
+$x$ $\equiv$ $y$ ($mod$ $m$) is true if $x$ $mod$ $m$ $=$ $y$ $mod$ $m$\\
+that is to say\\
+$x$ $\equiv$ $y$ ($mod$ $m$) if $m$ $|$ $x$ $-$ $y$\\
+
+in some more English that says $x$ is equivalent to $y$ ($mod$ $m$) if $m$ divides $x$ - $y$\\
+To better illustrate what modulus division does when programming, let us take an example. Let`s say we want the remainder of $16$ $\div$ $6$. In another form we want to know why \\
+$16$ $\%$ $6$ $=$ $4$\\
+First it performs $integer$ $division$, (this means that any fractional number is dropped which is equivalent to rounding down)\\
+So, $16$ $/$ $6$ $=$ $2$\\
+Then multiple the result with the divisor\\
+$2$ $*$ $6$ $=$ $12$\\
+Now subtract the result from the above multiplication with the dividend\\
+$16$ $-$ $12$ $=$ $4$\\
+
+Why does the distinction between modular arithmetic and just getting the remainder matter? Well because modular arithmetic asserts, for example that $23$ and $1903$ are equivalent $mod$ $10$. What does this mean? (Basically it means they have the same remainder when you divide by $10$), however it`s beyond the scope of this lecture series. If you would like to learn more, check out number theory. Perhaps a good place to look at is \url{<http://www.cs.ecu.edu/karl/6420/spr16/Notes/Tool/numbers.html>}
 \end{document}
