@@ -443,4 +443,68 @@ public class Bank {
 We have the same setup as before, accountAmount and withdrawRequestAmount are initialized to $\$1000$.
 The if statement evaluates to false, so it goes to the else if statement, which evaluates to true, so it prints out ``Heres your money, you have none left now`` and then skips the else. Note that we can have as many else if statements as we want. Once the program finds one that is true, it will skip the rest.
 \section{switch Statement (Video Series Lecture 14 and 15)}
+The switch statement does the exact same thing that the if-else if- else statement does, just with different syntax. Sometimes if the the conditions are real simple, the if-else if-else gets annoying to write over and over, so you can use a switch statement which tends to be more compact. However, the case statements must be compile time constant. This means that they must be constant values such as numbers, strings, or other things. We cannot do relation comparison in a case statement. If we need to do relational comparison, we are stuck with if-else if-else statements.
+
+The lectures use the form
+\begin{lstlisting}
+switch(expression) {
+  case x:
+    // if x true do this
+    break;
+  case y:
+    // if y true do this
+    break;
+  default:
+    // if none are true do this
+}
+\end{lstlisting}
+
+However, I prefer to use extra curly brackets for reasons that we will go into when we talk about scope. So I prefer to write it this way
+
+\begin{lstlisting}
+switch(expression) {
+  case x:
+  {
+    // if x true do this
+  } break;
+  case y:
+  {
+    // if y true do this
+  } break;
+  default:
+  {
+    // if none are true do this
+  }
+}
+\end{lstlisting}
+
+So we can modify our bank program to use constants so that we have an excuse to use the switch statement.
+
+\begin{lstlisting}
+public class Bank {
+
+     public static void main(String []args){
+        int accountAmount = 1000;
+        int withdrawRequestAmount = 1000;
+        
+        switch(withdrawRequestAmount) {
+            case 1000:
+            {
+                System.out.println("Heres your money, you have none left now");
+            } break;
+            case 1001:
+            {
+                System.out.println("You dont have enough");
+            } break;
+            default:
+            {
+                System.out.println("GET A JOB, YOU NEED MONEY");
+            }
+        }
+        
+     }
+}
+\end{lstlisting}
+
+This program will looks at withdrawRequestAmount and goes down the cases until it finds ``Heres your money, you have none left now``. 
 \end{document}
