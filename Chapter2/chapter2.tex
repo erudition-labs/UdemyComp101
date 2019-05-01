@@ -120,11 +120,82 @@ The logical operators are directly rooted into propositional logic. What`s great
     \hline
     Logic & Programming Symbol & Definition & Example & Value \\ \hline
     $\& (Conjunction)$ & $\&\&$ & AND & ($5==5$) $\&\&$ ($5!=10$) & true \\ \hline
-    $V (disjunction)$ & $||$ & OR & ($3==3$) $||$ ($5==3$) & true \\ \hline
-    $\lnot (negation)$ & $!$ & NOT &  $!(5 != 5)$ & true \\ 
+    $V (Disjunction)$ & $||$ & OR & ($3==3$) $||$ ($5==3$) & true \\ \hline
+    $\lnot (Negation)$ & $!$ & NOT &  $!(5 != 5)$ & true \\ 
     \hline
   \end{tabular}
 \end{center}
+
+In programming (and logic) you can combine these logical operations to evaluate to some boolean value.\\
+
+\subsubsection{AND}
+In propositional logic, AND is a conjunction of two statements. We as humans have learned to communicate in this way as well, so it is often helpful to say it as a sentence to yourself and see if it makes sense. For example, ``Fire is hot and fire burns wood``. The two statements, ``Fire is hot`` and ``fire burns wood`` are both true about fire. We know this to be true because of our senses. since the two statements are true, then the conjunction of the two statements must also be true.\\
+
+Let us look at the truth table for the conjunction AND (I will be using the programming symbols for the logical operators),
+\begin{center}
+  \begin{tabular}{ | c | c | c |}
+    \hline
+    A & B & A $\&\&$ B \\ \hline
+    false & false & false \\ \hline
+    false & true & false \\ \hline
+    true & false & false \\ \hline
+    true & true & true \\
+    \hline
+  \end{tabular}
+\end{center}
+
+As you can see, the only time the AND operator is true is when both statements are true. If you really think about it, this makes sense when you speak. The next table will just be in plain English.
+
+\begin{center}
+  \begin{tabular}{ | c | c | c | c | p{4.5cm} |}
+    \hline
+		Statement A & Statement B & A $\&\&$ B & value & Explanation \\ \hline
+		Fire is cold & Fire is wet & Fire is cold and Fire is wet & false & We know fire isn`t cold or wet so it also can`t be both cold and wet \\  \hline
+		
+		Fire is cold & Fire is hot & Fire is cold and Fire is hot & false & Fire is hot, but we know it isn`t cold, so the sentence really makes no sense \\ \hline
+		
+		Fire is hot & Fire is cold & Fire is hot and Fire is cold & false & moving the true part of the sentence to the other side doesn`t change the fact that fire isn`t both hot and cold \\ \hline
+		
+		Fire is hot & Fire burns wood & fire is hot and fire burns wood & true & we know that fire is hot and that fire burns wood, so fire must be hot and also it must burn wood, which makes sense. \\
+    \hline
+  \end{tabular}
+\end{center}
+
+The next table, I will use conjunctions of relation statements, similar to what we would find in programming. In this table we will use a variable, $i$, let $i$ $=$ $5$
+
+\begin{center}
+  \begin{tabular}{ | c | c | c | c |}
+    \hline
+    A & B & A $\&\&$ B & Value\\ \hline
+    ($i$ $==$ $3$) & ($i$ $>=$ $10$) & ($i$ $==$ $3$) $\&\&$ ($i$ $>=$ $10$) & false \\ \hline
+    ($i$ $<$ $3$) & ($i$ $<=$ $5$) & ($i$ $<$ $3$) $\&\&$ ($i$ $<=$ $5$) & false \\ \hline
+    ($i$ $==$ $5$) & ($i$ $!=$ $5$) &  ($i$ $==$ $5$) $\&\&$ ($i$ $!=$ $5$)& false \\ \hline
+    ($i$ $>=$ $5$) & ($i$ $<=$ $5$) & ($i$ $>=$ $5$) $\&\&$ ($i$ $<=$ $5$) & true \\
+    \hline
+  \end{tabular}
+\end{center}
+
+Note that these two tables both correspond to the AND truth table. Now I would like to do a more complicated example with conjunctions of relational statements. Let $i$ $=$ $5$ again. Now let us evaluate\\ ((($i$ $!=$ $5$) $\&\&$ ($i$ $==$ $10$)) $\&\&$ $i$ $<=$ $5$)\\
+
+First identify the order, we must do the inner parenthesis first.\\
+(($i$ $!=$ $5$) $\&\&$ ($i$ $==$ $10$))\\
+Now we need to identify the statements\\
+($i$ $!=$ $5$) and ($i$ $==$ $10$) \\
+Now evaluate these statements \\
+($i$ $!=$ $5$) is false\\
+ ($i$ $==$ $10$) is false \\
+ So, (($i$ $!=$ $5$) $\&\&$ ($i$ $==$ $10$)) is equivalent to ((false) $\&\&$ (false)).\\
+ We can consult the Truth table to see that (($i$ $!=$ $5$) $\&\&$ ($i$ $==$ $10$)) is false\\
+ 
+ Now we have a conjunction of (false $\&\&$ ($i$ $==$ $10$))\\
+ we know that ($i$ $==$ $10$) is false \\
+ So, we have reduced (!(($i$ $!=$ $5$) $\&\&$ ($i$ $==$ $10$)) $\&\&$ $i$ $<=$ $5$) to (false $\&\&$ false)\\
+ We can again consult the truth table to see that (false $\&\&$ false) is false.\\
+ 
+ Therefore, (!(($i$ $!=$ $5$) $\&\&$ ($i$ $==$ $10$)) $\&\&$ $i$ $<=$ $5$) evaluates to false.\\
+ 
+ \subsubsection{OR}
+
 \section{True and False (Video Series Lecture 8 and 9)}
 \section{if Statement (Video Series Lecture 10 and 11)}
 \section{if else and if else if Statements (Video Series Lecture 12 and 13)}
