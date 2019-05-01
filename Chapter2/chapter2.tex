@@ -187,14 +187,77 @@ Now evaluate these statements \\
  So, (($i$ $!=$ $5$) $\&\&$ ($i$ $==$ $10$)) is equivalent to ((false) $\&\&$ (false)).\\
  We can consult the Truth table to see that (($i$ $!=$ $5$) $\&\&$ ($i$ $==$ $10$)) is false\\
  
- Now we have a conjunction of (false $\&\&$ ($i$ $==$ $10$))\\
- we know that ($i$ $==$ $10$) is false \\
- So, we have reduced (!(($i$ $!=$ $5$) $\&\&$ ($i$ $==$ $10$)) $\&\&$ $i$ $<=$ $5$) to (false $\&\&$ false)\\
- We can again consult the truth table to see that (false $\&\&$ false) is false.\\
+ Now we have a conjunction of (false $\&\&$ ($i$ $<=$ $5$))\\
+ we know that ($i$ $<=$ $5$) is true \\
+ So, we have reduced ((($i$ $!=$ $5$) $\&\&$ ($i$ $==$ $10$)) $\&\&$ $i$ $<=$ $5$) to (false $\&\&$ true)\\
+ We can again consult the truth table to see that (false $\&\&$ true) is false.\\
  
- Therefore, (!(($i$ $!=$ $5$) $\&\&$ ($i$ $==$ $10$)) $\&\&$ $i$ $<=$ $5$) evaluates to false.\\
+ Therefore, ((($i$ $!=$ $5$) $\&\&$ ($i$ $==$ $10$)) $\&\&$ $i$ $<=$ $5$) evaluates to false.
  
  \subsubsection{OR}
+ In propositional logic, OR is the disjunction of two statements. For example, ``It is sunny`` or ``it is cloudy``. It is one or the other. The truth table looks like this:\\
+ 
+ \begin{center}
+  \begin{tabular}{ | c | c | c |}
+    \hline
+    A & B & A $||$ B \\ \hline
+    false & false & false \\ \hline
+    false & true & true \\ \hline
+    true & false & true \\ \hline
+    true & true & true \\
+    \hline
+  \end{tabular}
+\end{center}
+
+As you can see, the only time that the whole disjunction is false is when both statements are false. This makes sense when we talk as well. When using OR we are speaking in terms of one or the other or both. When it comes to OR, we only need one statement to be true to make the whole disjunction true. Here is an English truth table.
+
+\begin{center}
+  \begin{tabular}{ | c | c | c | c | p{4.5cm} |}
+    \hline
+		Statement A & Statement B & A $||$ B & value & Explanation \\ \hline
+		Fire is cold & Fire is wet & Fire is cold or Fire is wet & false & We know fire isn`t cold or wet so it is neither. \\  \hline
+		
+		Fire is cold & Fire is hot & Fire is cold or Fire is hot & true & Fire is hot, but we know it isn`t cold, but since fire is hot, we know it is at least one of those two options \\ \hline
+		
+		Fire is hot & Fire is cold & Fire is hot or Fire is cold & true & moving the true part of the sentence to the other side doesn`t change the fact that fire is hot even if it isn`t cold \\ \hline
+		
+		Fire is hot & Fire burns wood & fire is hot or fire burns wood & true & we know that fire is hot and that fire burns wood, so fire must be hot and also it must burn wood, so take your pick. \\
+    \hline
+  \end{tabular}
+\end{center}
+
+Now again, but using relational statements that you would see in programming. Let $i$ $=$ $5$
+\begin{center}
+  \begin{tabular}{ | c | c | c | c |}
+    \hline
+    A & B & A $||$ B & Value\\ \hline
+    ($i$ $==$ $3$) & ($i$ $>=$ $10$) & ($i$ $==$ $3$) $||$ ($i$ $>=$ $10$) & false \\ \hline
+    ($i$ $<$ $3$) & ($i$ $<=$ $5$) & ($i$ $<$ $3$) $||$ ($i$ $<=$ $5$) & true \\ \hline
+    ($i$ $==$ $5$) & ($i$ $!=$ $5$) &  ($i$ $==$ $5$) $||$ ($i$ $!=$ $5$)& true \\ \hline
+    ($i$ $>=$ $5$) & ($i$ $<=$ $5$) & ($i$ $>=$ $5$) $||$ ($i$ $<=$ $5$) & true \\
+    \hline
+  \end{tabular}
+\end{center}
+
+Lets use the same statement from the above subsection, but swap out the AND`s with OR`s and see what happens to the value. Let us evaluate: \\
+((($i$ $!=$ $5$) $||$ ($i$ $==$ $10$)) $||$ $i$ $<=$ $5$)\\
+
+First identify the order, we must do the inner parenthesis first.\\
+(($i$ $!=$ $5$) $||$ ($i$ $==$ $10$))\\
+Now we need to identify the statements\\
+($i$ $!=$ $5$) or ($i$ $==$ $10$) \\
+Now evaluate these statements \\
+($i$ $!=$ $5$) is false\\
+ ($i$ $==$ $10$) is false \\
+ So, (($i$ $!=$ $5$) $||$ ($i$ $==$ $10$)) is equivalent to ((false) $||$ (false)).\\
+ We can consult the Truth table to see that (($i$ $!=$ $5$) $||$ ($i$ $==$ $10$)) is false\\
+ 
+ Now we have a disjunction of (false $||$ ($i$ $<=$ $5$))\\
+ we know that ($i$ $<=$ $5$) is true \\
+ So, we have reduced ((($i$ $!=$ $5$) $||$ ($i$ $==$ $10$)) $||$ $i$ $<=$ $5$) to (false $||$ true)\\
+ We can again consult the truth table to see that (false $||$ true) is true.\\
+ 
+ Therefore, ((($i$ $!=$ $5$) $||$ ($i$ $==$ $10$)) $||$ $i$ $<=$ $5$) evaluates to true.
 
 \section{True and False (Video Series Lecture 8 and 9)}
 \section{if Statement (Video Series Lecture 10 and 11)}

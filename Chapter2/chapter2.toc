@@ -3,7 +3,7 @@
 \contentsline {subsection}{\numberline {1.2}Logical Operators}{2}{subsection.1.2}% 
 \contentsline {subsubsection}{\numberline {1.2.1}AND}{2}{subsubsection.1.2.1}% 
 \contentsline {subsubsection}{\numberline {1.2.2}OR}{4}{subsubsection.1.2.2}% 
-\contentsline {section}{\numberline {2}True and False (Video Series Lecture 8 and 9)}{4}{section.2}% 
-\contentsline {section}{\numberline {3}if Statement (Video Series Lecture 10 and 11)}{4}{section.3}% 
-\contentsline {section}{\numberline {4}if else and if else if Statements (Video Series Lecture 12 and 13)}{4}{section.4}% 
-\contentsline {section}{\numberline {5}switch Statement (Video Series Lecture 14 and 15)}{4}{section.5}% 
+\contentsline {section}{\numberline {2}True and False (Video Series Lecture 8 and 9)}{6}{section.2}% 
+\contentsline {section}{\numberline {3}if Statement (Video Series Lecture 10 and 11)}{6}{section.3}% 
+\contentsline {section}{\numberline {4}if else and if else if Statements (Video Series Lecture 12 and 13)}{6}{section.4}% 
+\contentsline {section}{\numberline {5}switch Statement (Video Series Lecture 14 and 15)}{6}{section.5}% 
