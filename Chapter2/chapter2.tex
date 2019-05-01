@@ -328,9 +328,19 @@ In this section I would like to just do more examples.
 \section{if Statement (Video Series Lecture 10 and 11)}
 We have talked about all of these relational and logical operators and their evaluations all for this moment (and others, but this first moment). These are your tools for evaluating conditions. We combine these conditions with statements. The first being the if statement.\\
 \subsection{if}
+\begin{lstlisting}
+if(CONDITION_IS_TRUE) {
+    // DO THIS STUFF
+}
+\end{lstlisting}
+
 You would use the if-statement whenever you only wanted to execute some code when a condition is met.The if statement simply says, ``if this condition is true, then execute the next block of code.`` You could also imply that if the condition is true, then execute the next block of code, but if the condition is false, don`t execute the next block of code.\\
 
-If statements are pretty crucial to programming. For example, we all have little bombs inside our cars. The air bag in your inflates with gas when you slow down real quickly, in fact, so intensely that you would go from 55 mph to 0mph in a split second. Well that explosive in your steering wheel is regulated by an accelerometer that is constantly getting your deceleration and probably using an if statement to check if your current deceleration is close to the deceleration that you would see in a car crash. If it is, then detonate the explosive so that the gas from the explosive can expand and fill the air bag. If statements literally save your life in cases of terrible car accidents.
+If statements are pretty crucial to programming. For example, we all have little bombs inside our cars. The air bag in your car inflates with gas when you slow down real quick, in fact, so intensely that you would go from 55 mph to 0mph in a split second. Well that explosive in your steering wheel is regulated by an accelerometer that is constantly getting your deceleration and probably using an if statement to check if your current deceleration is greater than or equal to the deceleration that you would see in a car crash. If it is, then detonate the explosive so that the gas from the explosion can expand and fill the air bag. If statements literally save your life in cases of terrible car accidents.\\
+
+Or lets say you are creating a banking system and you only want to allow a user to take out money if they have enough funds to do so. You would need to get the current amount of money in the bank and use an if statement to check if the bank amount is greater than the amount of money the user wishes to withdraw. If it is, then execute the code to withdraw the requested amount.\\
+
+There are often numerous variables and conditions that you may want in place before some piece of code is executed. This is the use case of the if statement.\\
 
 A note of caution however. We have been doing some pretty long and complicated conditions for practice. This is generally a very bad idea when programming. You want your conditions to be as simple and easy to read as possible. If they get too long or complicated, then you need to rethink your design. That being said, sometimes you have no choice but to use long, ugly conditions.
 \subsection{Full Code Examples}
