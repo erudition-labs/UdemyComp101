@@ -373,7 +373,33 @@ Now evaluate these statements \\
  We can consult the OR truth table to see that false $||$ false is false.
 
 \section{True and False (Video Series Lecture 8 and 9)}
-In this section I would like to just do more examples.
+In this section I would like to just do more examples.\\
+
+Let $i$ $=$ $5$ and $k$ $=$ $-2$\\
+Let`s evaluate ((($i$ $==$ $5$) $||$ ($i$ $<=$ $k$)) $\&\&$ $!$(($k$ $!=$ $i$) $\&\&$ ($k$ $>$ $9$)))\\
+
+Let`s start on the left hand side (($i$ $==$ $5$) $||$ ($i$ $<=$ $k$))\\
+Evaluate the left and right hand side of this disjunction\\
+
+($i$ $==$ $5$) is true\\
+($i$ $<=$ $k$) is false\\
+So (($i$ $==$ $5$) $||$ ($i$ $<=$ $k$)) becomes ((true) $||$ (false)) which is true\\
+
+so now we have ((true) $\&\&$ $!$(($k$ $!=$ $i$) $\&\&$ ($k$ $>$ $9$)))\\
+
+Now let`s move to the right side\\
+$!$(($k$ $!=$ $i$) $\&\&$ ($k$ $>$ $9$)) \\
+($k$ $!=$ $i$) is true\\
+($k$ $>$ $9$) is false\\
+so (($k$ $!=$ $i$) $\&\&$ ($k$ $>$ $9$)) becomes ((true) $\&\&$ (false)) which is false\\
+now $!$(($k$ $!=$ $i$) $\&\&$ ($k$ $>$ $9$)) becomes $!$(false) which is true\\
+so $!$(($k$ $!=$ $i$) $\&\&$ ($k$ $>$ $9$)) is true\\
+
+Now altogether we have ((true) $\&\&$ (true)) which is true\\
+Therefore, ((($i$ $==$ $5$) $||$ ($i$ $<=$ $k$)) $\&\&$ $!$(($k$ $!=$ $i$) $\&\&$ ($k$ $>$ $9$))) evaluates to true\\
+
+
+
 \section{if Statement (Video Series Lecture 10 and 11)}
 We have talked about the relational and logical operators and their evaluations all for this moment (and others, but this moment first). These are your tools for evaluating conditions. We combine these conditions with statements. The first being the if statement.\\
 \subsection{if}
