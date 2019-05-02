@@ -83,7 +83,42 @@ Computer Science 101: Introduction to Java and Algorithms\\
 \section{Pre-Chapter}
 \subsection{``final`` Keyword (When Used With Variables)}
 \label{sec:final}
+We have talked about keywords before, but most of them we have never used. In this Chapter I will use this keyword, so it might help to know what it does. the ``final	`` keyword does a number of things depending on how you use it. Most of these things we will cover later and so I will cover the use of final with them when we cover them. In this instance, we are using it with a variable.\\
+
+When it comes to final with variables, we would use it in the form of
+\begin{center}
+  \begin{tabular}{ | c | c | c | c | c |}
+    \hline
+    final &TYPE & $VARIABLE\_NAME$ & $=$ & VALUE  \\
+    \hline
+  \end{tabular}
+\end{center}
+
+So for example,
+\begin{lstlisting}
+        final int CONTINUE = 1;
+\end{lstlisting}
+
+What does ``final`` do to a variable? Well, it makes the variable constant, meaning, once you set the variable, it cannot be changed. In the above code snippet, we assigned it to $1$, and for the duration of the program, it will stay $1$. We cannot change the value of that variable or else the compiler will give us an error. If we need to change the value of CONTINUE, then we shouldn`t use the final keyword.
+
 \subsection{// comments}
+You have probably seen code snippets where you see something like ``// do this stuff``. This is called a comment. Comments are used to provide additional information for the person reading your code. the ``//`` tells the compiler to just ignore all other text after ``//`` until the end of that line. Java also has multi line comments where you can tell the compiler to ignore multiple lines in your source code. The ``/* comment here */`` is used for miltiline comments. So for example, 
+
+\begin{lstlisting}
+        // a single line comment
+        // if I want to  comment multiple lines with this
+        // then I have to use // each line
+        int i = 0; // I can also do it at the end of some piece of code and the code will work
+        //int i = 0; however this code will be totally ignored because it is commented out.
+        
+        /*
+				This is a mult line comment
+				I do not need to put anything else to tell the compiler
+				that I want it to ignore all this text
+				
+				int i =0; code inside of here will also be ignored.        
+        */
+\end{lstlisting}
 
 \section{Relational and Logical Operators (Video Series Lecture 7)}
 In this part of the series, we introduce the relational operators.  Interestingly enough, they are all the same operators that exist in basic mathematics. However, this would be our first experience with logic. By that I mean that it will be helpful here to start thinking of things in terms of true and false. For example, $1<2$ is a true statement. Whereas $5>1$ is a false statement. That`s all there really is to say about it.
@@ -585,5 +620,5 @@ public class Menu {
 }
 \end{lstlisting}
 
-This code would output ``Quit the game``.
+This code would output ``Quit the game``. The two code snippets both achieve the same thing. Ultimately it will come down to preference as to which you would like to use.
 \end{document}

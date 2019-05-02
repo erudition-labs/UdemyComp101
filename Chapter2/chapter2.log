@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.3.9)  2 MAY 2019 11:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.3.9)  2 MAY 2019 11:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -468,12 +468,7 @@ been already used, duplicate ignored
                    \relax 
 l.80 \clearpage
                 [1]
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 118--119
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
 
@@ -481,198 +476,208 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.119 
-       [1
+l.120         */
+                 [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 134--135
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--138
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
 
  []
 
 
-Underfull \hbox (badness 1365) in paragraph at lines 162--162
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+
+ []
+
+
+Underfull \hbox (badness 1365) in paragraph at lines 197--197
 \OT1/cmr/m/n/10 sen-tence to the other side
  []
 
 
-Underfull \hbox (badness 2318) in paragraph at lines 164--165
+Underfull \hbox (badness 2318) in paragraph at lines 199--200
 []\OT1/cmr/m/n/10 we know that fire is hot
  []
 
 
-Underfull \hbox (badness 1082) in paragraph at lines 164--165
+Underfull \hbox (badness 1082) in paragraph at lines 199--200
 \OT1/cmr/m/n/10 fire must be hot and also
  []
 
 
-Overfull \hbox (0.94958pt too wide) in paragraph at lines 155--167
+Overfull \hbox (0.94958pt too wide) in paragraph at lines 190--202
  [] 
  []
 
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 183--184
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 185--194
-
- []
-
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 195--199
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--204
+Underfull \hbox (badness 10000) in paragraph at lines 220--229
 
- []
-
-
-Underfull \hbox (badness 1365) in paragraph at lines 227--227
-\OT1/cmr/m/n/10 sen-tence to the other side
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 247--249
+Underfull \hbox (badness 10000) in paragraph at lines 230--234
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--259
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 260--264
-
+Underfull \hbox (badness 1365) in paragraph at lines 262--262
+\OT1/cmr/m/n/10 sen-tence to the other side
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 268--269
+Underfull \hbox (badness 10000) in paragraph at lines 282--284
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--294
+Underfull \hbox (badness 10000) in paragraph at lines 285--294
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--304
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 305--309
+Underfull \hbox (badness 10000) in paragraph at lines 295--299
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 310--311
+Underfull \hbox (badness 10000) in paragraph at lines 303--304
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--314
+Underfull \hbox (badness 10000) in paragraph at lines 327--329
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--324
+Underfull \hbox (badness 10000) in paragraph at lines 330--339
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 325--328
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 334--335
+Underfull \hbox (badness 10000) in paragraph at lines 340--344
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 342--343
+Underfull \hbox (badness 10000) in paragraph at lines 345--346
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 344--345
+Underfull \hbox (badness 10000) in paragraph at lines 347--349
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 346--347
+Underfull \hbox (badness 10000) in paragraph at lines 350--359
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--349
+Underfull \hbox (badness 10000) in paragraph at lines 360--363
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 369--370
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 375--376
+Underfull \hbox (badness 10000) in paragraph at lines 377--378
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 379--380
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--382
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 383--384
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 422--423
+Underfull \hbox (badness 10000) in paragraph at lines 410--411
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 424--425
+Underfull \hbox (badness 10000) in paragraph at lines 457--458
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 459--460
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 426--427
+Underfull \hbox (badness 10000) in paragraph at lines 461--462
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 428--429
+Underfull \hbox (badness 10000) in paragraph at lines 463--464
 
  []
 
-[11] [12] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 546--547
+[12] [13] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 581--582
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 548--549
+Underfull \hbox (badness 10000) in paragraph at lines 583--584
 
  []
 
-[14]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 589.
- [15]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 589.
+[15]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 624.
+ [16]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 624.
  (./chapter2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 589.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 589.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 624.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 624.
 Package rerunfilecheck Info: File `chapter2.out' has not changed.
 (rerunfilecheck)             Checksum: 9A886EDFB2545D0F379163BEC773EC23;1358.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 589.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 624.
  ) 
 Here is how much of TeX's memory you used:
- 8996 strings out of 492616
- 124774 string characters out of 6135178
- 436592 words of memory out of 5000000
- 12582 multiletter control sequences out of 15000+600000
+ 9014 strings out of 492616
+ 125040 string characters out of 6135178
+ 443592 words of memory out of 5000000
+ 12583 multiletter control sequences out of 15000+600000
  8282 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 31i,13n,43p,727b,1851s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 31i,13n,43p,727b,1909s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/publi
@@ -680,10 +685,10 @@ c/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr
 /share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on chapter2.pdf (17 pages, 198585 bytes).
+Output written on chapter2.pdf (18 pages, 203687 bytes).
 PDF statistics:
- 448 PDF objects out of 1000 (max. 8388607)
- 415 compressed objects within 5 object streams
- 224 named destinations out of 1000 (max. 500000)
+ 471 PDF objects out of 1000 (max. 8388607)
+ 437 compressed objects within 5 object streams
+ 241 named destinations out of 1000 (max. 500000)
  158 words of extra memory for PDF output out of 10000 (max. 10000000)
 
