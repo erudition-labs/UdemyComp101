@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.3.9)  2 MAY 2019 11:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.3.9)  2 MAY 2019 12:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -440,7 +440,7 @@ LaTeX Info: Redefining \nameref on input line 62.
 \openout3 = `chapter2.out'.
 
 \c@lstlisting=\count129
-<background.jpg, id=80, 548.0475pt x 338.76563pt>
+<background.jpg, id=84, 548.0475pt x 338.76563pt>
 File: background.jpg Graphic file (type jpg)
 <use background.jpg>
 Package pdftex.def Info: background.jpg  used on input line 76.
@@ -671,22 +671,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 633.
  (./chapter2.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 633.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 633.
-
-
-Package rerunfilecheck Warning: File `chapter2.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `chapter2.out':
-(rerunfilecheck)             Before: 9A886EDFB2545D0F379163BEC773EC23;1358
-(rerunfilecheck)             After:  66A72013D71987203D71FB365F0A2055;1430.
+Package rerunfilecheck Info: File `chapter2.out' has not changed.
+(rerunfilecheck)             Checksum: 617A136CF1FB9E162376363276A87C4C;1439.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 633.
  ) 
 Here is how much of TeX's memory you used:
- 9018 strings out of 492616
- 125082 string characters out of 6135178
+ 9019 strings out of 492616
+ 125098 string characters out of 6135178
  443592 words of memory out of 5000000
- 12584 multiletter control sequences out of 15000+600000
+ 12585 multiletter control sequences out of 15000+600000
  8450 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  31i,13n,43p,842b,1909s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -698,10 +691,10 @@ mr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr
 /share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmtt9.pfb>
-Output written on chapter2.pdf (19 pages, 217968 bytes).
+Output written on chapter2.pdf (19 pages, 218271 bytes).
 PDF statistics:
- 483 PDF objects out of 1000 (max. 8388607)
- 447 compressed objects within 5 object streams
+ 487 PDF objects out of 1000 (max. 8388607)
+ 451 compressed objects within 5 object streams
  243 named destinations out of 1000 (max. 500000)
- 158 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 166 words of extra memory for PDF output out of 10000 (max. 10000000)
 
