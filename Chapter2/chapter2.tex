@@ -80,6 +80,11 @@ Computer Science 101: Introduction to Java and Algorithms\\
 \clearpage
 \setcounter{page}{1}
 
+\section{Pre-Chapter}
+\subsection{``final`` Keyword (When Used With Variables)}
+\label{sec:final}
+\subsection{// comments}
+
 \section{Relational and Logical Operators (Video Series Lecture 7)}
 In this part of the series, we introduce the relational operators.  Interestingly enough, they are all the same operators that exist in basic mathematics. However, this would be our first experience with logic. By that I mean that it will be helpful here to start thinking of things in terms of true and false. For example, $1<2$ is a true statement. Whereas $5>1$ is a false statement. That`s all there really is to say about it.
 \subsection{The Relational Operators}
@@ -531,12 +536,54 @@ public class Menu {
         } else if(optionSelected == SETTINGS) {
             System.out.println("Change game settings");
         } else if(optionSelected == QUIT) {
-            System.out.println("Change game settings");
+            System.out.println("Quit the game");
         } else {
             System.out.println("No option selected");
         }
      }
 }
 \end{lstlisting}
+In this code snippet you will see something we probably haven`t used before, at least in this pdf, the ``final`` keyword . If you are unsure of what this is, please checkout the Pre-Chapter \autoref{sec:final}. Note that we hardcoded the selected option for the sake of simplicity. In reality you would want to get set the  ``optionSelected`` variable by getting a value from the keyboard or game controller or something like that. In this case ``optionSelected`` is set to ``CONTINUE`` which is set to $1$. \\ 
 
+It is often best practice to used name variables such as ``NEW{\_}GAME`` to represent the actual values. It is much easier to understand what ``NEW{\_}GAME`` means as opposed to some value when reading the code. Also note that the only relation operator used is ``==`` and we are just comparing to integer values. When executed this code goes down the if-else if-else statements until it finds a matching value or it reaches the end. So this code would print out ``Continue an existing game``.  The structure of this code (meaning we only use ``==`` and comparing to one value at a time) is perfect for a switch statement.\\
+
+Let`s refactor this code to use a switch statement and let us change the option selected to Quit the game.
+\begin{lstlisting}
+
+public class Menu {
+
+     public static void main(String []args){
+        final int NEW_GAME = 0;
+        final int CONTINUE = 1;
+        final int SETTINGS = 2;
+        final int QUIT = 3;
+        
+        int optionSelected = QUIT;
+     
+     switch(optionSelected) {
+         case NEW_GAME: {
+            System.out.println("Create an new game");
+         } break;
+         
+         case CONTINUE: {
+            System.out.println("Continue an existing game");
+         } break;
+         
+         case SETTINGS: {
+            System.out.println("Change game settings");
+         } break;
+         
+         case QUIT: {
+            System.out.println("Quit the game");
+         } break;
+         
+         default: {
+            System.out.println("No option selected");
+        }
+      }
+    }
+}
+\end{lstlisting}
+
+This code would output ``Quit the game``.
 \end{document}

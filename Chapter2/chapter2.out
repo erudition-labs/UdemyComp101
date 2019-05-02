@@ -1,16 +1,19 @@
-\BOOKMARK [1][-]{section.1}{Relational and Logical Operators \(Video Series Lecture 7\)}{}% 1
-\BOOKMARK [2][-]{subsection.1.1}{The Relational Operators}{section.1}% 2
-\BOOKMARK [2][-]{subsection.1.2}{Logical Operators}{section.1}% 3
-\BOOKMARK [3][-]{subsubsection.1.2.1}{AND}{subsection.1.2}% 4
-\BOOKMARK [3][-]{subsubsection.1.2.2}{OR}{subsection.1.2}% 5
-\BOOKMARK [3][-]{subsubsection.1.2.3}{NOT}{subsection.1.2}% 6
-\BOOKMARK [1][-]{section.2}{True and False \(Video Series Lecture 8 and 9\)}{}% 7
-\BOOKMARK [1][-]{section.3}{if Statement \(Video Series Lecture 10 and 11\)}{}% 8
-\BOOKMARK [2][-]{subsection.3.1}{if}{section.3}% 9
-\BOOKMARK [2][-]{subsection.3.2}{Full Code Examples}{section.3}% 10
-\BOOKMARK [1][-]{section.4}{if else and if else if Statements \(Video Series Lecture 12 and 13\)}{}% 11
-\BOOKMARK [2][-]{subsection.4.1}{if else}{section.4}% 12
-\BOOKMARK [2][-]{subsection.4.2}{if-else if-else}{section.4}% 13
-\BOOKMARK [1][-]{section.5}{switch Statement \(Video Series Lecture 14 and 15\)}{}% 14
-\BOOKMARK [2][-]{subsection.5.1}{switch}{section.5}% 15
-\BOOKMARK [2][-]{subsection.5.2}{convert if-else if- else To switch}{section.5}% 16
+\BOOKMARK [1][-]{section.1}{Pre-Chapter}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{``final`` Keyword \(When Used With Variables\)}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{// comments}{section.1}% 3
+\BOOKMARK [1][-]{section.2}{Relational and Logical Operators \(Video Series Lecture 7\)}{}% 4
+\BOOKMARK [2][-]{subsection.2.1}{The Relational Operators}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.2}{Logical Operators}{section.2}% 6
+\BOOKMARK [3][-]{subsubsection.2.2.1}{AND}{subsection.2.2}% 7
+\BOOKMARK [3][-]{subsubsection.2.2.2}{OR}{subsection.2.2}% 8
+\BOOKMARK [3][-]{subsubsection.2.2.3}{NOT}{subsection.2.2}% 9
+\BOOKMARK [1][-]{section.3}{True and False \(Video Series Lecture 8 and 9\)}{}% 10
+\BOOKMARK [1][-]{section.4}{if Statement \(Video Series Lecture 10 and 11\)}{}% 11
+\BOOKMARK [2][-]{subsection.4.1}{if}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.2}{Full Code Examples}{section.4}% 13
+\BOOKMARK [1][-]{section.5}{if else and if else if Statements \(Video Series Lecture 12 and 13\)}{}% 14
+\BOOKMARK [2][-]{subsection.5.1}{if else}{section.5}% 15
+\BOOKMARK [2][-]{subsection.5.2}{if-else if-else}{section.5}% 16
+\BOOKMARK [1][-]{section.6}{switch Statement \(Video Series Lecture 14 and 15\)}{}% 17
+\BOOKMARK [2][-]{subsection.6.1}{switch}{section.6}% 18
+\BOOKMARK [2][-]{subsection.6.2}{convert if-else if- else To switch}{section.6}% 19
