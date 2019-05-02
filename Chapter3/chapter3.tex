@@ -136,8 +136,69 @@ do {
 while (conditionIsTrue);
 \end{lstlisting}
 \section{For Loop (Video Series Lecture 18 and 19)}
-The for loop is the most commonly used loop, at least in my experience.
+The for loop is the most commonly used loop, at least in my experience. The loop maintains a counter, a condition and the incrementation of the counter. As seen in the video series, 
+\begin{lstlisting}
+
+for (statement 1; statement 2; statement 3) {
+  // code block to be executed
+}
+\end{lstlisting}
+
+For example, to count to $5$, 
+
+\begin{lstlisting}
+
+for (int i = 0; i < 5; i++) {
+  System.out.println(i);
+}
+\end{lstlisting}
+
+Let`s break it down. The ``for`` is the keyword for a ``for loop``. The Parenthesis enclose the parameters of the for loop.
+\begin{lstlisting}
+int i = 0; //initializes the counter i to 0
+i <  5 // The condition of the loop, as long as this evaluates to true, your block of code will be executed
+i++ // increments the counter each time the code block is executed.
+\end{lstlisting}
+
+Note that the counter variable does not need to be $i$. You can name it anything you like. The best way to get familiar with loops is to just use them.
+
+\section{Example}
+Let`s write a program that prints out all of the integers from $1$ to $100$ (inclusive) that are divisible by 5. First let`s talk about what we need. First we want to use a loop to iterate from $1$ to $100$. For each iteration, we need to look at the counter and check if it is divisible by $5$. If it is, then print it out, otherwise, continue the loop. So inside out loop, we will need an if-statement. How do check if the counter is divisible by $5$? Well, we can use a little bit of math. We can divide the number by $5$ and see if there is a remainder. If there is no remainder, then it is obviously divisible by $5$. Luckily, Java gives us the modulus operator to get the remainder. 
+\subsection{Using A For Loop}
+
+\begin{lstlisting}
+public class Fives {
+     public static void main(String []args) {
+       for(int i=1; i<=100; i++) {
+            if(i % 5 == 0) {
+                System.out.println(i);
+            }
+       }
+    }
+}
+\end{lstlisting}
+
+Note that we start from $1$ and we use $<=$ as out relational operator. This is because we want to include $100$ in our list.
+
+\subsection{Using A While Loop}
+
+\begin{lstlisting}
+public class Fives {
+     public static void main(String []args) {
+        int i = 1;
+        while(i <= 100) {
+            if(i % 5 == 0) {
+                System.out.println(i);
+            }
+            i++;
+        }
+    }
+}
+\end{lstlisting}
+
+Note that we have to create the incrementor and increment it ourselves in the right spot.
+
 \section{Gotchas With Loops}
 \subsection{Infinite Loops}
-
+The most common problems that you will have when using loops is the infinite loop. This means that the condition is never met. This usually happens when you either wrote the condition wrong or you forgot to increment the incrementor. The program will just run until your computer runs out of memory (or at least the memory that the java virtual machine allows your program to have).
 \end{document}

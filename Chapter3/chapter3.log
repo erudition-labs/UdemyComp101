@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.3.9)  2 MAY 2019 14:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.3.9)  2 MAY 2019 16:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -440,7 +440,7 @@ LaTeX Info: Redefining \nameref on input line 62.
 \openout3 = `chapter3.out'.
 
 \c@lstlisting=\count129
-<background.jpg, id=40, 548.0475pt x 338.76563pt>
+<background.jpg, id=52, 548.0475pt x 338.76563pt>
 File: background.jpg Graphic file (type jpg)
 <use background.jpg>
 Package pdftex.def Info: background.jpg  used on input line 76.
@@ -489,44 +489,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 128--129
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 143.
-[2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 143.
+[2] [3]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 204.
+ [4]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 204.
  (./chapter3.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 143.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 143.
-
-
-Package rerunfilecheck Warning: File `chapter3.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `chapter3.out':
-(rerunfilecheck)             Before: F869897F0CDDD5F823A61F031464A237;600
-(rerunfilecheck)             After:  5BDC6AF73DA10B45EB97E25B54F72B3D;599.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 143.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 204.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 204.
+Package rerunfilecheck Info: File `chapter3.out' has not changed.
+(rerunfilecheck)             Checksum: 4BCE97E70DBE93A5EBF1110086B31443;776.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 204.
  ) 
 Here is how much of TeX's memory you used:
- 8815 strings out of 492616
- 122052 string characters out of 6135178
- 423592 words of memory out of 5000000
- 12572 multiletter control sequences out of 15000+600000
+ 8861 strings out of 492616
+ 122661 string characters out of 6135178
+ 436592 words of memory out of 5000000
+ 12578 multiletter control sequences out of 15000+600000
  12629 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 31i,13n,43p,431b,1176s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsection.3.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl
-10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on chapter3.pdf (4 pages, 144986 bytes).
+ 31i,13n,43p,704b,1176s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on chapter3.pdf (6 pages, 161633 bytes).
 PDF statistics:
- 142 PDF objects out of 1000 (max. 8388607)
- 126 compressed objects within 2 object streams
- 45 named destinations out of 1000 (max. 500000)
- 78 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 212 PDF objects out of 1000 (max. 8388607)
+ 193 compressed objects within 2 object streams
+ 85 named destinations out of 1000 (max. 500000)
+ 102 words of extra memory for PDF output out of 10000 (max. 10000000)
 
