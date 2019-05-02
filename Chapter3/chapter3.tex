@@ -80,7 +80,64 @@ Computer Science 101: Introduction to Java and Algorithms\\
 \clearpage
 \setcounter{page}{1}
 
-\section{adf}
-asdf
+\section{Pre-Chapter}
+\subsection{++ Incrementor and $--$ Decromentor (Might as well do += and -=)}
+When programming it is often a common task to increment or decrement things, such as a counter, by $1$. In fact it is so common that most languages, including java, have a short hand notation to do it. We also often need to perform some operation on a variable and then save it in that same variable, so there is shorthand notation for that as well. For example,
+
+\begin{lstlisting}
+int counter = 0;
+
+counter = counter + 1; //long way to increment by one
+counter += 1; //shorter way
+counter++; //shortest way
+
+counter = counter - 1;
+counter -= 1;
+counter--;
+\end{lstlisting}
+
+The first three are equivalent and the last three are equivalent.
+\section{Loops}
+Loops are used for iterating over collections and counting. At the moment you don`t have anything to iterate over (loop over or loop through). In this section we are introducing the syntax and some basic things you can do with what we have gone over so far.
+\section{While and Do-While Loop (Video Series Lecture 16 and 17)}
+While loops are most useful when you don`t need to keep count of where you are at in a list. Although you certainly can.
+\subsection{While}
+As seen in the video series, a while loop looks like this
+\begin{lstlisting}
+while(CONDITION_IS_TRUE) {
+	//do this stuff
+}
+\end{lstlisting}
+
+For example, if we wanted to print ``Hello`` five times, we could use a  counter and our relational operators.
+\begin{lstlisting}
+public class Hello {
+
+     public static void main(String []args){
+        int counter = 0;
+        
+        while(counter < 5) {
+            System.out.println("Hello");
+            counter++;
+        }
+    }
+}
+\end{lstlisting}
+
+\subsection{Do-While}
+The do-while loop is honestly kind of useless. I don`t think I have ever used it in any production code. But it does exist and you might find it helpful depending on how you think of things. The do-while loop always iterates at least once. It will go through your block of code first and then check your condition. Whereas with the while loop, it will check the condition first and then execute your block of code.\\
+
+As seen in the video series, it looks like this
+
+\begin{lstlisting}
+do {
+   // execute code in block
+}
+while (conditionIsTrue);
+\end{lstlisting}
+\section{For Loop (Video Series Lecture 18 and 19)}
+The for loop is the most commonly used loop, at least in my experience.
+\section{Gotchas With Loops}
+\subsection{Infinite Loops}
 
 \end{document}
