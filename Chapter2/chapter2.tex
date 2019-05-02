@@ -445,6 +445,7 @@ The if statement evaluates to false, so it goes to the else if statement, which 
 \section{switch Statement (Video Series Lecture 14 and 15)}
 The switch statement does the exact same thing that the if-else if- else statement does, just with different syntax. Sometimes if the the conditions are real simple, the if-else if-else gets annoying to write over and over, so you can use a switch statement which tends to be more compact. However, the case statements must be compile time constant. This means that they must be constant values such as numbers, strings, or other things. We cannot do relation comparison in a case statement. If we need to do relational comparison, we are stuck with if-else if-else statements.
 
+\subsection{switch}
 The lectures use the form
 \begin{lstlisting}
 switch(expression) {
@@ -507,4 +508,35 @@ public class Bank {
 \end{lstlisting}
 
 This program will looks at withdrawRequestAmount and goes down the cases until it finds ``Heres your money, you have none left now``. 
+
+\subsection{convert if-else if- else To switch}
+Let`s suppose we have a game menu. There are a few standard options like New Game, Continue, Settings and Quit. A user generally can only choose one at a time. So let`s see what this could look like with an if-else if- else statement.
+
+\begin{lstlisting}
+
+public class Menu {
+
+     public static void main(String []args){
+        final int NEW_GAME = 0;
+        final int CONTINUE = 1;
+        final int SETTINGS = 2;
+        final int QUIT = 3;
+        
+        int optionSelected = CONTINUE; //get user input somehow
+        
+        if(optionSelected == NEW_GAME) {
+            System.out.println("Create an new game");
+        } else if(optionSelected == CONTINUE) {
+            System.out.println("Continue an existing game");
+        } else if(optionSelected == SETTINGS) {
+            System.out.println("Change game settings");
+        } else if(optionSelected == QUIT) {
+            System.out.println("Change game settings");
+        } else {
+            System.out.println("No option selected");
+        }
+     }
+}
+\end{lstlisting}
+
 \end{document}
