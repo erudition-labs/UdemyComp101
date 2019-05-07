@@ -1,0 +1,6 @@
+\contentsline {section}{\numberline {1}Pre-Chapter}{1}{section.1}% 
+\contentsline {section}{\numberline {2}Arrays (Video Series Lecture 20 and 21)}{1}{section.2}% 
+\contentsline {section}{\numberline {3}Looping Over Arrays (Video Series Lecture 22 and 23)}{1}{section.3}% 
+\contentsline {section}{\numberline {4}2D Arrays (Video Series Lecture 24 and 25)}{1}{section.4}% 
+\contentsline {section}{\numberline {5}Sorting Arrays: Insertion Sort Algorithm (Video Series Lecture 26 and 27)}{1}{section.5}% 
+\contentsline {section}{\numberline {6}Gotchas with Arrays}{1}{section.6}% 
