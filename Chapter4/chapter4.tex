@@ -103,6 +103,8 @@ Computer Science 101: Introduction to Java and Algorithms\\
   
   \item \textbf{\textit{Index into an array}} -- We are using the index (aka the position of an element in an array) to get the value of the element at that position in the array.
   
+  \item \textbf{\textit{Allocate memory}} --
+  
 \end{itemize}
 \section{Pre-Chapter}
 \subsection{Heap and Stack Memory(Over Simplified)}
@@ -132,11 +134,99 @@ We can declare an array just like we declare any other variable, in the form of
 \begin{lstlisting}
 int myArray[];
 \end{lstlisting}
+Now that we have declared the array, the compiler knows what we are talking about, but we cannot use it. Before we can use an array, we must initialize it with a size. We do that with the ``new`` keyword.
 
+\begin{lstlisting}
+int myArray[];
+myArray = new int[10];
+\end{lstlisting}
+Java guarantees that the elements in the array allocated using new will automatically be initialized to zero (for numeric types), false (for boolean), or null (for when you learn about objects). Why does this matter? Because bad things happen when we try to access memory that has ``nothing`` in it. We will talk about it further in the ``Gotchas``  \autoref{sec:gotchas}. \\
+
+Now lets briefly look at other common ways to declare and initialize arrays.
+
+\begin{lstlisting}
+int myArray[]; //declare
+myArray = new int[10]; //initialize separately
+//----------------------------------------
+
+int myArray[] = new int[10] //initialize in one line
+//----------------------------------------
+
+int size = 5;
+int myArray[] = new int[size]; //use variable for size
+//----------------------------------------
+
+int size = 5;
+int myArray[]; //declare
+myArray = new int[size]; //initialize separately
+\end{lstlisting}
+
+\subsection{Accessing Elements}
+To access elements, we need to know the position of the element in the array. The best way to see what I`m talking about is to let the code talk.
+
+\begin{lstlisting}
+class Main {
+  public static void main(String[] args) {
+    String myArray[] = new String[2]; //create array of size 2
+    //access array using index
+    myArray[0] = "hello"; // first element
+    myArray[1] = "world"; // secodn element
+
+    System.out.println(myArray[0] + " " + myArray[1]);
+  }
+}
+\end{lstlisting}
+
+At the beginning of the code, we create a String array of size two. So our array would look like this:
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{arrays1.png}
+	\caption{Image from Lecture}
+\end{figure}
+
+The next line, we access the first element of the array and set it equal to `` hello``. So now our array looks like this:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{arrays1.png}
+	\caption{Image from Lecture}
+\end{figure}
+
+Then we do the next index position and set it to ``world``. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{arrays1.png}
+	\caption{Image from Lecture}
+\end{figure}
+
+Finally we just print the the element at index $0$ concatenated with an empty space (so we have a space between out words so it looks like ``hello world`` instead of ``helloworld``) which is also concatenated with ``world``. So the output of this program is ``hello world``.
+
+\subsection{Increasing/Decreasing the size of an Array}
+Can we take an existing array and increase or decrease it`s size? No. Sooooooo, now what? If you need to increase of decrease the size of an array, then you need to initialize a new array and use a loop to copy all of your elements over into the new array and assign your old array to your new array. Let`s let the code talk.
+
+\begin{lstlisting}
+class Main {
+  public static void main(String[] args) {
+    double myArray[] = new double[10]; //create array of size 10
+
+    //OH NO, I ran out of room!!!
+
+    double tempBiggerArray[] = new double[myArray.length * 2]; //new bigger temp array twice the size of my other array
+    for(int i=0; i<myArray.length; i++) { //loop over old array of size 10
+      tempBiggerArray[i] = myArray[i]; //copy over each element
+    }
+      myArray = tempBiggerArray; // now myArray has size 20
+  }
+}
+\end{lstlisting}
+
+As you can imagine, this seems like it isn`t an efficient thing to do every time you need more space. This is a limitation of arrays. They must be initialized with a fixed length. And the size must be known at the time of initialization. This means that I must know how big I need my array to be so that I can create one big enough.
 \section{Looping Over Arrays (Video Series Lecture 22 and 23)}
 \section{2D Arrays (Video Series Lecture 24 and 25)}
 \section{Sorting Arrays: Insertion Sort Algorithm (Video Series Lecture 26 and 27)}
 \section{Gotchas with Arrays}
+\label{sec:gotchas}
 
 
 
