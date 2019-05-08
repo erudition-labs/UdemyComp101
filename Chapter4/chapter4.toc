@@ -1,11 +1,11 @@
 \contentsline {section}{\numberline {1}Terminology}{1}{section.1}% 
-\contentsline {section}{\numberline {2}Pre-Chapter}{1}{section.2}% 
-\contentsline {subsection}{\numberline {2.1}Heap and Stack Memory(Over Simplified)}{1}{subsection.2.1}% 
-\contentsline {subsection}{\numberline {2.2}The ``new`` keyword}{1}{subsection.2.2}% 
-\contentsline {subsection}{\numberline {2.3}Declaration vs. Initialization}{1}{subsection.2.3}% 
-\contentsline {section}{\numberline {3}Arrays (Video Series Lecture 20 and 21)}{1}{section.3}% 
+\contentsline {section}{\numberline {2}Pre-Chapter}{2}{section.2}% 
+\contentsline {subsection}{\numberline {2.1}Heap and Stack Memory(Over Simplified)}{2}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.2}The ``new`` keyword}{2}{subsection.2.2}% 
+\contentsline {subsection}{\numberline {2.3}Declaration vs. Initialization}{2}{subsection.2.3}% 
+\contentsline {section}{\numberline {3}Arrays (Video Series Lecture 20 and 21)}{2}{section.3}% 
 \contentsline {subsection}{\numberline {3.1}What does an Array Look Like?}{2}{subsection.3.1}% 
-\contentsline {subsection}{\numberline {3.2}Declaring/Initializing an Array}{2}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.2}Declaring/Initializing an Array}{3}{subsection.3.2}% 
 \contentsline {section}{\numberline {4}Looping Over Arrays (Video Series Lecture 22 and 23)}{3}{section.4}% 
 \contentsline {section}{\numberline {5}2D Arrays (Video Series Lecture 24 and 25)}{3}{section.5}% 
 \contentsline {section}{\numberline {6}Sorting Arrays: Insertion Sort Algorithm (Video Series Lecture 26 and 27)}{3}{section.6}% 

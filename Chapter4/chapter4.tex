@@ -6,7 +6,8 @@
 \usepackage{float}
 \usepackage{transparent}
 \usepackage{eso-pic}
-\usepackage{hyperref}
+\usepackage[colorlinks,linkcolor={blue}]{hyperref}
+
 
 
 \usepackage{listings}
@@ -83,18 +84,30 @@ Computer Science 101: Introduction to Java and Algorithms\\
 \section{Terminology}
 \begin{itemize}
   \item \textbf{\textit{Memory}} --
-  memory is
+  Memory is where all the action happens. Many people often refer to it as storage space although that is not entirely true. When programmers talk of memory, we are talking about addressable memory. This means memory that computers can create addresses for and thus use. Memory is NOT hard drive space. It is RAM. The amount of memory you have depends on two things. The amount of RAM you have and the operating systems you are using (eg. 32 bit windows vs 64 bit windows). With 32 bit systems, you are limited to 4 GB of ram where as 64 bit machines are (theoretically since we haven`t done it) limited to 16.8 million terabytes of RAM. Everything happens in your memory. When you start up your computer, windows (or mac, linux, android, IOS...whatever) gets loaded into memory. Whenever you launch a program, it gets loaded into memory. Pretty much whenever you do anything on a computer, it`s done in memory. As a programmer, you generally deal with two types of memory, heap and stack. Refer to \autoref{sec:heap} to lean more about heap vs stack.
+
   
-  \item \textbf{\textit{Data Structure}} --
+  \item \textbf{\textit{Data Structure}} -- Data structures is basically a term to describe a way of organizing data. We create certain rules for how we store and organize data so that we can take advantage of its organization when performing operations like insertion, retrieval, and searching. Some example data structures are arrays, linked lists, binary trees, hash maps and vectors. Feel free to look any up if you are curious. One of the simplest to understand is the linked list.
   
-  \item \textbf{\textit{Collections}} --
+  \item \textbf{\textit{Collections}} -- In many programming languages we often come across the terms collections and containers. In Java, we only deal with collections. A collection is a way of grouping data together under the same name. I would recommend \url{<https://www.geeksforgeeks.org/collections-in-java-2/>} if you are curious about more.
   
-  \item \textbf{\textit{Array}} --
+  \item \textbf{\textit{Array}} -- A collection of data elements of the same type stored in a contiguous chunk of memory.
   
-  \item \textbf{\textit{Elements of an Array}} --
+  \item \textbf{\textit{Elements of an array}} -- We use this phrase to talk about all of the pieces of data stored in an array.
+  
+  \item \textbf{\textit{Iterate over an array (loop over an array)}} -- We use these phrases when we are talking about using one of the loops, like a for or while loop, to look at each element in an array (one each iteration of the loop).
+  
+  \item \textbf{\textit{Random access}} -- This means we can access an arbitrary piece of memory. In reference to arrays, it means that we can access any arbitrary element in an array as long as it exists. You won`t hear this term too much until you learn about algorithm efficiency.
+  
+  \item \textbf{\textit{Index}} -- The position of something, often in an array-like collection. In reference to arrays, the index is the position that an element is stored at in the array.
+  
+  \item \textbf{\textit{Index into an array}} -- We are using the index (aka the position of an element in an array) to get the value of the element at that position in the array.
+  
 \end{itemize}
 \section{Pre-Chapter}
 \subsection{Heap and Stack Memory(Over Simplified)}
+\label{sec:heap}
+
 \subsection{The ``new`` keyword}
 \subsection{Declaration vs. Initialization}
 \section{Arrays (Video Series Lecture 20 and 21)}
