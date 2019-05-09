@@ -7,8 +7,8 @@
 \BOOKMARK [2][-]{subsection.3.1}{What does an Array Look Like?}{section.3}% 7
 \BOOKMARK [2][-]{subsection.3.2}{Declaring/Initializing an Array}{section.3}% 8
 \BOOKMARK [2][-]{subsection.3.3}{Accessing Elements}{section.3}% 9
-\BOOKMARK [2][-]{subsection.3.4}{Increasing/Decreasing the size of an Array}{section.3}% 10
-\BOOKMARK [1][-]{section.4}{Looping Over Arrays \(Video Series Lecture 22 and 23\)}{}% 11
+\BOOKMARK [1][-]{section.4}{Looping Over Arrays \(Video Series Lecture 22 and 23\)}{}% 10
+\BOOKMARK [2][-]{subsection.4.1}{Increasing/Decreasing the size of an Array}{section.4}% 11
 \BOOKMARK [1][-]{section.5}{2D Arrays \(Video Series Lecture 24 and 25\)}{}% 12
 \BOOKMARK [1][-]{section.6}{Sorting Arrays: Insertion Sort Algorithm \(Video Series Lecture 26 and 27\)}{}% 13
 \BOOKMARK [1][-]{section.7}{Gotchas with Arrays}{}% 14

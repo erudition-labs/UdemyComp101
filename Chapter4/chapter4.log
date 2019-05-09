@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.3.9)  8 MAY 2019 11:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.3.9)  8 MAY 2019 21:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -479,8 +479,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.108 \end{itemize}
-                    [1
+l.107 
+       [1
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 116--117
@@ -512,55 +512,61 @@ Underfull \hbox (badness 10000) in paragraph at lines 143--144
 
  []
 
-[3 <./arrays1.png>]
-File: arrays1.png Graphic file (type png)
-<use arrays1.png>
-Package pdftex.def Info: arrays1.png  used on input line 183.
-(pdftex.def)             Requested size: 191.2139pt x 37.13866pt.
-File: arrays1.png Graphic file (type png)
-<use arrays1.png>
-Package pdftex.def Info: arrays1.png  used on input line 191.
-(pdftex.def)             Requested size: 191.2139pt x 37.13866pt.
- [4]
-File: arrays1.png Graphic file (type png)
-<use arrays1.png>
-Package pdftex.def Info: arrays1.png  used on input line 199.
-(pdftex.def)             Requested size: 191.2139pt x 37.13866pt.
- [5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 233.
- [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 233.
- (./chapter4.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 233.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 233.
-Package rerunfilecheck Info: File `chapter4.out' has not changed.
-(rerunfilecheck)             Checksum: 981364B523345D27C59E4888718DC889;1057.
+[3 <./arrays1.png>] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
 
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 237--238
+
+ []
+
+[6]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 280.
+ [7]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 280.
+ (./chapter4.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 280.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 280.
+
+
+Package rerunfilecheck Warning: File `chapter4.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `chapter4.out':
+(rerunfilecheck)             Before: 981364B523345D27C59E4888718DC889;1057
+(rerunfilecheck)             After:  4727E8136F8051E4428E1519878A00AC;1057.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 233.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 280.
  ) 
 Here is how much of TeX's memory you used:
- 8855 strings out of 492616
- 122626 string characters out of 6135178
- 435620 words of memory out of 5000000
- 12587 multiletter control sequences out of 15000+600000
+ 8886 strings out of 492616
+ 123068 string characters out of 6135178
+ 448620 words of memory out of 5000000
+ 12588 multiletter control sequences out of 15000+600000
  8809 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 31i,13n,43p,1088b,1849s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></u
-sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf
--dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmtt9.pfb>
-Output written on chapter4.pdf (8 pages, 191201 bytes).
+ 31i,13n,43p,1088b,1853s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{subsection.3.4} has been referenced but does not 
+exist, replaced by a fixed one
+
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmtt9.pfb>
+Output written on chapter4.pdf (9 pages, 203713 bytes).
 PDF statistics:
- 218 PDF objects out of 1000 (max. 8388607)
- 195 compressed objects within 2 object streams
- 71 named destinations out of 1000 (max. 500000)
+ 262 PDF objects out of 1000 (max. 8388607)
+ 236 compressed objects within 3 object streams
+ 101 named destinations out of 1000 (max. 500000)
  123 words of extra memory for PDF output out of 10000 (max. 10000000)
 
