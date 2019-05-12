@@ -109,9 +109,40 @@ Computer Science 101: Introduction to Java and Algorithms\\
 \section{Pre-Chapter}
 \subsection{Heap and Stack Memory(Over Simplified)}
 \label{sec:heap}
+Programmers care about two types of memory which we refer to as ``the Stack`` and ``the Heap``. Really these will make more sense once you learn about data structures and learn what a stack and a heap is and how they work. However, when we say ``the`` before it, like ``the stack`` or ``the heap``, we are talking about two sections of memory. \\
+
+Let us imagine that you have 8 GB or RAM. In reality your operating system and various other things will be using all that. Besides that, Java will limit how much memory you are allowed to have. But lets say, for instance, that Java allows us to have 2GB of memory. It`s just this huge chunk of addressable memory (meaning memory we can use). When we write a program, there are certain things that the compiler will already know. For example, you will define all of you variables. All of the stuff that the compiler can know before hand will be allocated to the stack memory. Now there are things that the compiler won`t be able to know before hand. For example, lets say that we want to create something once the program is already running (soon you will learn that we do this with arrays), all of this stuff gets allocated to the heap.\\
+
+With the information that you have seen so far, all we can really say about the stack and the heap is that they really are all just one big chunk of memory, but we divide them up and make them follow rules. Most things that the compiler can know will go on the stack, while things we do dynamically when the program is running will go on the heap. Don`t worry, we will be revisiting these concepts quite a few times throughout the course, hopefully making the distinction clearer as we go.
 
 \subsection{The ``new`` keyword}
+This will probably be the first time that you see the ``new`` keyword, at least in this course. In short, this keyword is used for allocating things to the heap.
 \subsection{Declaration vs. Initialization}
+Declaring a variable is different from initializing a variable. For example, declaring a variable looks like this:
+\begin{lstlisting}
+int a;
+\end{lstlisting}
+
+We are telling the compile (aka declaring to the compiler) that we want it to set aside space to store an integer and we will be referencing that space as ``a``.  Notice that we do not assign anything to that variable. It is only declared to the compiler.\\
+
+So if we look at this snippet, 
+
+\begin{lstlisting}
+int a = 5;
+\end{lstlisting}
+
+We  are assigning $5$ to the variable ``a``. This is what we call initialization. We first declare the variable and then initialize it to $5$. In this case we do the declaration and the initialization at the same time. 
+
+However, we there is no reason why we cannot separate them.
+\begin{lstlisting}
+int a;
+a = 5;
+\end{lstlisting}
+
+In this case the first line declares the variable, and the second line initializes the variable to $5$.\\
+
+So declaration is used to tell the compiler to set aside memory and initialization puts that memory to use by giving the variable a value.
+
 \section{Arrays (Video Series Lecture 20 and 21)}
 This section introduces Arrays, which is a data structure that stores collections of elements. What is a data structure? Well a data structure is just a way organizing data by following certain rules when we store and retrieve it. By doing this, we can take advantage of the way the data is organized to make efficient algorithms. Some data structures are better at some things than others. It all depends on what you need to do. So when you take a data structures class (or look into it yourself) you will learn about different data structures (aka different ways of organizing data), their rules, their advantages, disadvantages and their best use cases.\\
 
