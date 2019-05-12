@@ -234,7 +234,7 @@ class Main {
 }
 \end{lstlisting}
 
-Turns out, we cannot do this. If you were to try, your output will look something like, ``[I@4aa298b7``. What the heck is that? Well to put it simply, you can think of that as the address in memory where the array is stored.\\
+Turns out, we cannot do this. If you were to try, your output will look something like, ``[I@4aa298b7``. What the heck is that? Well to put it simply, you can think of that as the address in memory where the beginning of the array is stored.\\
 
 So how do we print out all of the elements? Well you have to loop over each one and print it out.
 
@@ -243,13 +243,27 @@ class Main {
   public static void main(String[] args) {
     int[] myArray = new int[] {5, 7, 3, 9, 10, 15, 27}; //create array with values
     for(int i=0; i<myArray.length; i++) {
-      System.out.print(i + " ");
+      System.out.print(myArray[i] + " ");
     }
   }
 }
 \end{lstlisting}
 
 This outputs ``0 1 2 3 4 5 6``
+
+Or similarly with a while loop,
+\begin{lstlisting}
+class Main {
+  public static void main(String[] args) {
+    int[] myArray = new int[] {5, 7, 3, 9, 10, 15, 27}; //create array with values
+    int i = 0;
+	while(i < myArray.length) {
+		System.out.print(myArray[i] + " ");
+		i++;	
+	}    
+  }
+}
+\end{lstlisting}
 \subsection{Increasing/Decreasing the size of an Array}
 Can we take an existing array and increase or decrease it`s size? No. Sooooooo, now what? If you need to increase of decrease the size of an array, then you need to initialize a new array and use a loop to copy all of your elements over into the new array and assign your old array to your new array. Let`s let the code talk.
 
@@ -269,12 +283,83 @@ class Main {
 }
 \end{lstlisting}
 
-As you can imagine, this seems like it isn`t an efficient thing to do every time you need more space. This is a limitation of arrays. They must be initialized with a fixed length. And the size must be known at the time of initialization. This means that I must know how big I need my array to be so that I can create one big enough.
+As you can imagine, this seems like it isn`t an efficient thing to do every time you need more space (I say seems like because this if you are familiar with how a vector works, this is exactly what it does and it turns out that doubling the size of the array each time usually means that it only has to do so a handful of times.). This is a limitation of arrays. They must be initialized with a fixed length. And the size must be known at the time of initialization. This means that I must know how big I need my array to be so that I can create one big enough. And if I need one bigger, then I must create an entirely new array.
+
 \section{2D Arrays (Video Series Lecture 24 and 25)}
+Imagine having the need to represent a 2 dimensional matrix to perform linear transformations on in a game. Or even a 3 dimensional matrix for 3d game transformations or translations. What if I need a collection where each collection stores more collections? Well, it turns out that you can have nested arrays. Arrays of Arrays of Arrays and Nth dimensional arrays. Usually, however, we never really need to go beyond two or three dimensions, especially since each dimension will most likely add a performance penalty in your code.\\
+
+All of the concepts are pretty much the same. We create them in the same way and index into them in a similar way. The only difference is that we need two indices now. Let`s take a look at this snippet of code where we create a $3$ x $3$ matrix and print it out:
+
+\begin{lstlisting}
+class Main {
+  public static void main(String[] args) {
+    int[][] myArray = new int[3][3]; //create 3x3 array filled with 0
+
+    for(int i=0; i<myArray.length; i++) { //for each row
+      for(int j=0; j<myArray[i].length; j++) { //for each column
+        System.out.print(myArray[i][j]);
+      }
+      System.out.println(); //new line for each row
+    } 
+  }
+}
+\end{lstlisting}
+
+The out put will look like this\\
+0 0 0\\0 0 0\\ 0 0 0\\
+
+When we create a new 2d array, it is often useful to thing of it as row by column, so ``new int [row][col]``, which in this case was just 3 x 3. Notice here that we used two for loops. When visualizing this, I think it is best to think of a 2d array simply as a 1d array that points to another 1d array.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{2darray.png}
+	\caption{Image from \url{<https://www.cs.cmu.edu/~mrmiller/15-110/Handouts/arrays2D.pdf>}}
+\end{figure}
+
+The first for-loop selects which row we want to iterate over. So the the first for-loop condition compares the counter $i$ to the number of rows in the 2d array. The second for-loop iterates over all of the elements in that row (aka the columns). This is why we use the length of the current row in the second for-loop condition. In other words, we are using the second for-loop to iterate over the $i-th$ row in the the 2d array.
+
+\subsection{Another Example}
+In this example we are going to create a a 2d matrix of strings. Each element will be the $x$ and $y$ coordinate of that 2d grid. Then we will print out the matrix.
+
+\begin{lstlisting}
+class Main {
+  public static void main(String[] args){
+    String[][] myArray = new String[4][6]; //create 4x6 array filled with 0
+
+    for(int i=0; i<myArray.length; i++) {
+      for(int j=0; j<myArray[i].length; j++) {
+        myArray[i][j] = new String("(" + i + ", " + j + ")");
+      }
+    }
+
+    for(int i=0; i<myArray.length; i++) { //for each row
+      for(int j=0; j<myArray[i].length; j++) { //for each column
+        System.out.print(myArray[i][j]);
+      }
+      System.out.println(); //new line for each row
+    } 
+  }
+}
+\end{lstlisting}
+
+The output of this program will look like:\\
+(0, 0)(0, 1)(0, 2)(0, 3)(0, 4)(0, 5)\\(1, 0)(1, 1)(1, 2)(1, 3)(1, 4)(1, 5)\\(2, 0)(2, 1)(2, 2)(2, 3)(2, 4)(2, 5)\\(3, 0)(3, 1)(3, 2)(3, 3)(3, 4)(3, 5)\\
+
+We will be getting more practice with 2d arrays when we do our project at the end of the next chapter. We will be using a 2d array to represent out 2d world.
+
 \section{Sorting Arrays: Insertion Sort Algorithm (Video Series Lecture 26 and 27)}
 \section{Gotchas with Arrays}
 \label{sec:gotchas}
+\subsection{Array Index Out of Bounds}
+The number one problem that you will face, I still face and what every programmer to ever exist has faced is the infamous ``ArrayIndexOutofBoundsException``. At least that`s what it is called in Java. If you ever compile your program and get this error, or you program crashes and you get this error, then go find where you are looping over arrays, because the problem is probably there. This exception means that you are overstepping the bound of your array. What does that mean? That means that you are using in index that is either bigger or smaller than the size of your array.\\
 
+For instance, lets say that you created a 3 x 3 array. If you try to access this array with, say, [4][3], you will get that error because the the number of rows that your array has is 3 but you are trying to access the 4th element in the 5th row, which obviously doesn`t exist since you didn`t create it. Similarly with 1d arrays, if you create an array of size 6 then try to access the 10th element, you will get this error because it doesn`t exist.\\
 
+This commonly happens when you are looping over your array. Sometimes you get into an infinite loop and the counter is greater than the size of your array. Many times, your loop condition is wrong and you will be off by one. Another common occurrence is when you are looping over the array backwards. Sometimes you still go too far and your counter becomes negative. If obviously doesn`t make sense to be accessing the element at position $-1$ of your array.\\
+
+So if you come across this error, double check your loops, your loop conditions, your indices that you are trying to use and make sure you are using the right size arrays.
+
+\section{Arrays Behind the Scenes}
+Please note that you can totally skip this section if you like. However, if you are like me, you are probably asking why. Why must arrays be contiguous? Why must we allocate entirely new arrays when we want to increase of decrease the array size? Why must we know how many elements we are going to need to store? Why do we get an error when our index is greater or smaller than the size of the array?
 
 \end{document}
