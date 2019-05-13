@@ -12,6 +12,7 @@
 \BOOKMARK [1][-]{section.5}{2D Arrays \(Video Series Lecture 24 and 25\)}{}% 12
 \BOOKMARK [2][-]{subsection.5.1}{Another Example}{section.5}% 13
 \BOOKMARK [1][-]{section.6}{Sorting Arrays: Insertion Sort Algorithm \(Video Series Lecture 26 and 27\)}{}% 14
-\BOOKMARK [1][-]{section.7}{Gotchas with Arrays}{}% 15
-\BOOKMARK [2][-]{subsection.7.1}{Array Index Out of Bounds}{section.7}% 16
-\BOOKMARK [1][-]{section.8}{Arrays Behind the Scenes}{}% 17
+\BOOKMARK [2][-]{subsection.6.1}{Notes abut efficiency on Insertion Sort}{section.6}% 15
+\BOOKMARK [1][-]{section.7}{Gotchas with Arrays}{}% 16
+\BOOKMARK [2][-]{subsection.7.1}{Array Index Out of Bounds}{section.7}% 17
+\BOOKMARK [1][-]{section.8}{Arrays Behind the Scenes}{}% 18

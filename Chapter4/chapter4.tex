@@ -379,6 +379,70 @@ The output of this program will look like:\\
 We will be getting more practice with 2d arrays when we do our project at the end of the next chapter. We will be using a 2d array to represent out 2d world.
 
 \section{Sorting Arrays: Insertion Sort Algorithm (Video Series Lecture 26 and 27)}
+In this section we are going to implement a sorting algorithm called Insertion Sort. The idea is fairly simple. You split the array into two sections, one side is considered ``sorted`` and the other side is not. You then sort the array by inserting and element into the correct place on the sorted side, hence ``insertion sort``.\\
+
+In the video series, I linked a website that animates insertion sort \url{<https://visualgo.net/bn/sorting
+>}. Be sure to select ``INS`` at the top of the page for insertion sort. Now let`s talk about what we see here. It looks like a bar graph with numbers on the bottom. This is simply a visual representation of the number. The bigger the number, the bigger the bar.\\
+
+If you follow the animation, you will see that the first iteration simply makes the first element the sorted side of the array. The next iteration, it looks at the first element on the unsorted side and inserts it into the sorted side. and so on until the array is sorted. Lets look at some code and then visually walk through the iterations.
+\pagebreak
+\begin{lstlisting}
+class Main {
+  public static void main(String[] args) {
+    int[] input = new int[] {5, 3, 23, 78 ,65};
+
+    for (int i=1; i<input.length; i++) { //start at the second element.
+        int key = input[i];  //make a copy of the element we want to insert
+        int j = i - 1;  //start at the end of the sorted list
+        while (j >= 0 && input[j] > key) { //go until either beginning of array or correct spot 
+            input[j + 1] = input[j]; //move the element down one each time
+            j--; //move down the sorted list
+        }
+        //at this point we are either at the beginning of the array or we have found
+        //where the element is less than or equal to the the thing we want to insert
+        input[j + 1] = key;  //insert it
+    }
+
+    for(int i=0; i<input.length; i++) { //print the sorted array
+      System.out.print(input[i] + " ");
+    }
+  }
+}
+\end{lstlisting}
+Lets look at a couple iterations visually.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.75]{iteration1InsertionSort.png}
+	\caption{For loop Iteration 1}
+\end{figure}
+
+We start with the initial array. We make the first element the sorted side of the array, at that point the variables $i$, key and $j$ are all set. Next it goes to the while-loop, on the first iteration, we move $5$ down and decrement $j$. $j$ becomes a negative number and makes the while condition false. Once we break out of the while-loop, we set the end of the sorted list to the key. And thus, our sorted side grows by one.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.75]{iteration2InsertionSort.png}
+	\caption{For loop Iteration 2}
+\end{figure}
+
+In the second iteration, it turns out we don`t even need the while loop. The condition is false since the key is greater than the last index of the sorted side. That is to say that the thing we want to insert is greater than the greatest element in the unsorted list, so we simply need to insert it into the sorted side.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.75]{iteration3InsertionSort.png}
+	\caption{For loop Iteration 3}
+\end{figure}
+The same thing happened here as iteration 2.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.75]{iteration4InsertionSort.png}
+	\caption{For loop Iteration 3}
+\end{figure}
+
+Here we have the same situation as iteration 1, we only need to move the unsorted element down by one and we are done. Now the for loop will break since we are at the end of the array and finally the array is sorted.
+
+\subsection{Notes abut efficiency on Insertion Sort}
+As you can imagine, this isn`t the most efficient sorting algorithm. If you take an algorithms class you will probably run your own experiments on the sorting algorithms and find that Insertion Sort actually performs best on data sets of like 100 elements. It even outperforms other sorting algorithms that we deem more efficient as long as the data set is small. So often when we sort things, we use the better rated algorithm like quick sort until we reach a small number of elements, then we move to something like insertion sort. What i`m trying to point out here is that Insertion Sort is impractical to use by itself, but very useful as an optimization when used with other sorting algorithms.
 \section{Gotchas with Arrays}
 \label{sec:gotchas}
 \subsection{Array Index Out of Bounds}

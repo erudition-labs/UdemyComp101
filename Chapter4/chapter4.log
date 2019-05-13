@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.3.9)  12 MAY 2019 22:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.3.9)  13 MAY 2019 13:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -563,75 +563,130 @@ Underfull \hbox (badness 10000) in paragraph at lines 376--378
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--386
+Underfull \hbox (badness 10000) in paragraph at lines 382--383
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 387--388
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 389--390
+Underfull \hbox (badness 10000) in paragraph at lines 384--386
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 394--395
+<iteration1InsertionSort.png, id=291, 603.25375pt x 704.6325pt>
+File: iteration1InsertionSort.png Graphic file (type png)
+<use iteration1InsertionSort.png>
+Package pdftex.def Info: iteration1InsertionSort.png  used on input line 415.
+(pdftex.def)             Requested size: 452.4392pt x 528.4731pt.
+ [12]
+<iteration2InsertionSort.png, id=319, 683.55376pt x 473.77pt>
+File: iteration2InsertionSort.png Graphic file (type png)
+<use iteration2InsertionSort.png>
+Package pdftex.def Info: iteration2InsertionSort.png  used on input line 423.
+(pdftex.def)             Requested size: 512.66406pt x 355.32663pt.
+
+Overfull \hbox (42.90904pt too wide) in paragraph at lines 423--424
+ [][] 
+ []
+
+[13 <./iteration1InsertionSort.png>]
+<iteration3InsertionSort.png, id=326, 683.55376pt x 473.77pt>
+File: iteration3InsertionSort.png Graphic file (type png)
+<use iteration3InsertionSort.png>
+Package pdftex.def Info: iteration3InsertionSort.png  used on input line 431.
+(pdftex.def)             Requested size: 512.66406pt x 355.32663pt.
+
+Overfull \hbox (42.90904pt too wide) in paragraph at lines 431--432
+ [][] 
+ []
+
+[14 <./iteration2InsertionSort.png>]
+<iteration4InsertionSort.png, id=333, 623.32875pt x 653.44125pt>
+File: iteration4InsertionSort.png Graphic file (type png)
+<use iteration4InsertionSort.png>
+Package pdftex.def Info: iteration4InsertionSort.png  used on input line 438.
+(pdftex.def)             Requested size: 467.4954pt x 490.07973pt.
+ [15 <./iteration3InsertionSort.png>]
+[16 <./iteration4InsertionSort.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 449--450
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 402--403
+Underfull \hbox (badness 10000) in paragraph at lines 451--452
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 404--405
+Underfull \hbox (badness 10000) in paragraph at lines 453--454
 
  []
 
-<rawarrays.png, id=290, 487.8225pt x 241.90375pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 458--459
+
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 466--467
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 468--469
+
+ []
+
+<rawarrays.png, id=352, 487.8225pt x 241.90375pt>
 File: rawarrays.png Graphic file (type png)
 <use rawarrays.png>
-Package pdftex.def Info: rawarrays.png  used on input line 411.
+Package pdftex.def Info: rawarrays.png  used on input line 475.
 (pdftex.def)             Requested size: 365.86597pt x 181.42735pt.
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 415--416
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 479--480
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 417--418
+Underfull \hbox (badness 10000) in paragraph at lines 481--482
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 419--420
+Underfull \hbox (badness 10000) in paragraph at lines 483--484
 
  []
 
-[13 <./rawarrays.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 421--422
+[19 <./rawarrays.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 485--486
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 424.
-[14]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 424.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 488.
+[20]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 488.
  (./chapter4.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 424.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 424.
-Package rerunfilecheck Info: File `chapter4.out' has not changed.
-(rerunfilecheck)             Checksum: 647A27459BA8F6AC30AA91DBDB15CD45;1257.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 424.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 488.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 488.
+
+
+Package rerunfilecheck Warning: File `chapter4.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `chapter4.out':
+(rerunfilecheck)             Before: 647A27459BA8F6AC30AA91DBDB15CD45;1257
+(rerunfilecheck)             After:  F078478CEFD598FA44BD2187E78362A7;1346.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 488.
  ) 
 Here is how much of TeX's memory you used:
- 8967 strings out of 492616
- 124197 string characters out of 6135178
- 443620 words of memory out of 5000000
- 12604 multiletter control sequences out of 15000+600000
+ 9022 strings out of 492616
+ 125260 string characters out of 6135178
+ 452620 words of memory out of 5000000
+ 12622 multiletter control sequences out of 15000+600000
  8809 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  31i,13n,43p,1088b,1878s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -644,10 +699,10 @@ sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmtt9.pfb>
-Output written on chapter4.pdf (16 pages, 256684 bytes).
+Output written on chapter4.pdf (22 pages, 345023 bytes).
 PDF statistics:
- 378 PDF objects out of 1000 (max. 8388607)
- 341 compressed objects within 4 object streams
- 164 named destinations out of 1000 (max. 500000)
- 157 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 445 PDF objects out of 1000 (max. 8388607)
+ 394 compressed objects within 4 object streams
+ 197 named destinations out of 1000 (max. 500000)
+ 177 words of extra memory for PDF output out of 10000 (max. 10000000)
 
