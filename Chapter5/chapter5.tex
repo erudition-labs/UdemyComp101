@@ -87,60 +87,9 @@ Computer Science 101: Introduction to Java and Algorithms\\
   Memory is where all the action happens. Many people often refer to it as storage space although that is not entirely true. When programmers talk of memory, we are talking about addressable memory. This means memory that computers can create addresses for and thus use. Memory is NOT hard drive space. It is RAM. The amount of memory you have depends on two things. The amount of RAM you have and the operating systems you are using (eg. 32 bit windows vs 64 bit windows). With 32 bit systems, you are limited to 4 GB of ram where as 64 bit machines are (theoretically since we haven`t done it) limited to 16.8 million terabytes of RAM. Everything happens in your memory. When you start up your computer, windows (or mac, linux, android, IOS...whatever) gets loaded into memory. Whenever you launch a program, it gets loaded into memory. Pretty much whenever you do anything on a computer, it`s done in memory. As a programmer, you generally deal with two types of memory, heap and stack. Refer to \autoref{sec:heap} to lean more about heap vs stack.
 
   
-  \item \textbf{\textit{Data Structure}} -- Data structures is basically a term to describe a way of organizing data. We create certain rules for how we store and organize data so that we can take advantage of its organization when performing operations like insertion, retrieval, and searching. Some example data structures are arrays, linked lists, binary trees, hash maps and vectors. Feel free to look any up if you are curious. One of the simplest to understand is the linked list.
-  
-  \item \textbf{\textit{Collections}} -- In many programming languages we often come across the terms collections and containers. In Java, we only deal with collections. A collection is a way of grouping data together under the same name. I would recommend \url{<https://www.geeksforgeeks.org/collections-in-java-2/>} if you are curious about more.
-  
-  \item \textbf{\textit{Array}} -- A collection of data elements of the same type stored in a contiguous chunk of memory.
-  
-  \item \textbf{\textit{Elements of an array}} -- We use this phrase to talk about all of the pieces of data stored in an array.
-  
-  \item \textbf{\textit{Iterate over an array (loop over an array)}} -- We use these phrases when we are talking about using one of the loops, like a for or while loop, to look at each element in an array (one each iteration of the loop).
-  
-  \item \textbf{\textit{Random access}} -- This means we can access an arbitrary piece of memory. In reference to arrays, it means that we can access any arbitrary element in an array as long as it exists. You won`t hear this term too much until you learn about algorithm efficiency.
-  
-  \item \textbf{\textit{Index}} -- The position of something, often in an array-like collection. In reference to arrays, the index is the position that an element is stored at in the array.
-  
-  \item \textbf{\textit{Index into an array}} -- We are using the index (aka the position of an element in an array) to get the value of the element at that position in the array.
-  
-  \item \textbf{\textit{Allocate memory}} -- Whenever we need create variables, the compiler looks at the type of variable  (int, float etc) and sets aside the right amount of memory to store values of that type (aka allocate memory). However, in the case of things like arrays and object (more on objects later), the programmer need to allocate the memory. Basically, any time you use the ``new`` keyword, you are allocating memory for that type to store the values.
-  
+
 \end{itemize}
 \section{Pre-Chapter}
-\subsection{Heap and Stack Memory(Over Simplified)}
-\label{sec:heap}
-Programmers care about two types of memory which we refer to as ``the Stack`` and ``the Heap``. Really these will make more sense once you learn about data structures and learn what a stack and a heap is and how they work. However, when we say ``the`` before it, like ``the stack`` or ``the heap``, we are talking about two sections of memory. \\
 
-Let us imagine that you have 8 GB or RAM. In reality your operating system and various other things will be using all that. Besides that, Java will limit how much memory you are allowed to have. But lets say, for instance, that Java allows us to have 2GB of memory. It`s just this huge chunk of addressable memory (meaning memory we can use). When we write a program, there are certain things that the compiler will already know. For example, you will define all of you variables. All of the stuff that the compiler can know before hand will be allocated to the stack memory. Now there are things that the compiler won`t be able to know before hand. For example, lets say that we want to create something once the program is already running (soon you will learn that we do this with arrays), all of this stuff gets allocated to the heap.\\
-
-With the information that you have seen so far, all we can really say about the stack and the heap is that they really are all just one big chunk of memory, but we divide them up and make them follow rules. Most things that the compiler can know will go on the stack, while things we do dynamically when the program is running will go on the heap. Don`t worry, we will be revisiting these concepts quite a few times throughout the course, hopefully making the distinction clearer as we go.
-
-\subsection{The ``new`` keyword}
-This will probably be the first time that you see the ``new`` keyword, at least in this course. In short, this keyword is used for allocating things to the heap.
-\subsection{Declaration vs. Initialization}
-Declaring a variable is different from initializing a variable. For example, declaring a variable looks like this:
-\begin{lstlisting}
-int a;
-\end{lstlisting}
-
-We are telling the compile (aka declaring to the compiler) that we want it to set aside space to store an integer and we will be referencing that space as ``a``.  Notice that we do not assign anything to that variable. It is only declared to the compiler.\\
-
-So if we look at this snippet, 
-
-\begin{lstlisting}
-int a = 5;
-\end{lstlisting}
-
-We  are assigning $5$ to the variable ``a``. This is what we call initialization. We first declare the variable and then initialize it to $5$. In this case we do the declaration and the initialization at the same time. 
-
-However, we there is no reason why we cannot separate them.
-\begin{lstlisting}
-int a;
-a = 5;
-\end{lstlisting}
-
-In this case the first line declares the variable, and the second line initializes the variable to $5$.\\
-
-So declaration is used to tell the compiler to set aside memory and initialization puts that memory to use by giving the variable a value.
 
 \end{document}
