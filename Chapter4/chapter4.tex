@@ -391,6 +391,34 @@ This commonly happens when you are looping over your array. Sometimes you get in
 So if you come across this error, double check your loops, your loop conditions, your indices that you are trying to use and make sure you are using the right size arrays.
 
 \section{Arrays Behind the Scenes}
-Please note that you can totally skip this section if you like. However, if you are like me, you are probably asking why. Why must arrays be contiguous? Why must we allocate entirely new arrays when we want to increase of decrease the array size? Why must we know how many elements we are going to need to store? Why do we get an error when our index is greater or smaller than the size of the array?
+Please note that you can totally skip this section if you like and it will definitely be helpful to go back to the first chapter and review of we deal with sizes of integers and units we use. However, if you are like me, you are probably asking why. Why must arrays be contiguous? Why must we allocate entirely new arrays when we want to increase of decrease the array size? Why must we know how many elements we are going to need to store? Why do we get an error when our index is greater or smaller than the size of the array? Well, I`m going to break down how arrays work.\\
 
+If you look at lower level languages, especially C, you can get a clearer idea of what is going on. In C we deal with memory addresses directly. Java doesn`t give you a choice, you aren`t allowed to deal with them directly. So one way to create an array in C is as like this:
+
+\begin{lstlisting}
+int *A = (int *) malloc( 10 * sizeof(int));
+\end{lstlisting}
+
+Now there is no need for you to know what all of this means exactly. The variable $A$ is a pointer, which just means that it stores the memory address of where the variable is stored. the ``(int *)`` is called a cast. Malloc is a C function (we will talk about methods and functions in the next chapter) that returns a void pointer. So the ``(int *)`` tells the computer that we want to make that void pointer into an integer pointer. Next we have ``$10$ $*$ sizeof(int)``. There we are saying that we want  enough memory to store $10$ elements of the size of integers (often 4 bytes but depends on your system). So what does this give us exactly? It gives us the memory address of the first element of the array, and that`s it. So if all we have is the address of the first element of the array, how the heck are we supposed to do anything with it, and what is this indexing nonsense that we see in Java?\\
+
+The array subscripts ``$[ ]$`` is sort of a shorthand notation or abstraction for what actually happens. To get the address of the $i-th$ element we need the base address and the data size. Since malloc gave us the base address and we know the data type, we have everything we need. The formula for getting the address of the $i-th$ element is $address$ $=$ $baseAddress$ $+$  $subscript$ $*$ $size$. The shorthand notation calculates exactly this and uses the address to get the value from memory.\\
+
+Lets say we allocate a 1d array of 3 integer elements, where the size of the integers used on the system is 4 bytes and it just so happens that the base address ends up being $5000$.
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.75]{rawarrays.png}
+	\caption{Visual Representation}
+\end{figure}
+
+On the left is raw memory. On the right is the array elements. When dealing with memory, we generally deal with things in terms of bytes. So when each integer needs 4 bytes to represent the number, we take up 4 of the address spaces. The first element takes the address space of 5000 to 5003, the second 5004 to 5007 and the third 5008 to 5011. Next to each element, we use the subscript in the formula to calculate the address where each element is stored at in memory.\\
+
+This is great and all, but what does all this have to do with the questions that we asked at the beginning? Well lets go through them. Why must arrays be contiguous? We now know that use the $[ ]$ to index into an array is the equivalent of using the formula to get the address where the element is stored. That is to say that indexing into an array is simply a math equation. What happens if it isn`t contiguous? What happens if there is a gap between the elements memory? If you look at the picture, what if there was a blank spot at address $5004$ and then the next array element starts. Well the rest of the calculations will be off by $1$ and when you go to index into the array, you are starting in the middle of the binary number. We are chopping off 4 bits of the rest of the numbers when we try to access them. On top of that, when we try to access the second element, there is nothing there, or there is random garbage there. Thus, arrays entirely rely on the fact that the memory is allocated contiguously.\\
+
+Why must we allocate entirely new arrays when we want to alter the size of the array? If you read the pre-chapter, then you know that we allocate arrays using the ``new`` keyword, which means it gets allocated to the heap. Things that are allocated to the heap are done so sort of randomly. Since we usually never know what the size of something will be, it just finds a spot in memory in it. We have no guarantees that there will be any order to the heap. When we allocated our array in the image, it is entirely possible that there is something else stored at the address 5012. If we try to increase the array, then we would overwrite that value. Therefore, you must create an entirely new array since that is the only time that you are guaranteed that the memory will be allocated contiguously.\\
+
+Why must we know how many elements we want to store? Well that`s easy to answer now. We need to know so we can allocate the right amount of memory.\\
+
+Why do we an error when overstep the bounds of our array? As mentioned before, all we know is the address of the first element in the array. So what happens when we overstep the bounds? Well we try to access memory that wasn`t allocated for us. There is either nothing there, or some random garbage value. In other languages, such as C, there is nothing stopping you from overstepping the bounds. You simply access the garbage value, or in the case of nothing being there, the program just crashes. This was such a huge security problem that Java decided to do something about it. Java arrays actually know their size. They keep track of the array size so that when you try to overstep the bounds, it throws an error.
 \end{document}
