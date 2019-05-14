@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.3.9)  13 MAY 2019 16:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.3.9)  13 MAY 2019 16:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -441,7 +441,7 @@ LaTeX Info: Redefining \nameref on input line 62.
 \openout3 = `Chapter1.out'.
 
 \c@lstlisting=\count129
-<background.jpg, id=52, 548.0475pt x 338.76563pt>
+<background.jpg, id=56, 548.0475pt x 338.76563pt>
 File: background.jpg Graphic file (type jpg)
 <use background.jpg>
 Package pdftex.def Info: background.jpg  used on input line 76.
@@ -450,12 +450,12 @@ Package pdftex.def Info: background.jpg  used on input line 76.
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./background.jpg>] (./Chap
 ter1.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 2.
+LaTeX Font Info:    Try loading font information for U+msa on input line 3.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 2.
+LaTeX Font Info:    Try loading font information for U+msb on input line 3.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -475,11 +475,6 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 85.
-
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
-
- []
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
@@ -488,48 +483,47 @@ l.112
        [1
 
 ]
-<sizes.png, id=88, 378.41376pt x 239.89626pt>
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
+
+ []
+
+<sizes.png, id=91, 378.41376pt x 239.89626pt>
 File: sizes.png Graphic file (type png)
 <use sizes.png>
-Package pdftex.def Info: sizes.png  used on input line 115.
+Package pdftex.def Info: sizes.png  used on input line 118.
 (pdftex.def)             Requested size: 283.80962pt x 179.92174pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 123--124
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--126
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
 
  []
 
 [2 <./sizes.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
  []
 
-<arm.png, id=98, 557.08125pt x 804.00375pt>
+<arm.png, id=101, 557.08125pt x 804.00375pt>
 File: arm.png Graphic file (type png)
 <use arm.png>
-Package pdftex.def Info: arm.png  used on input line 137.
+Package pdftex.def Info: arm.png  used on input line 140.
 (pdftex.def)             Requested size: 278.53995pt x 402.0009pt.
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 145--146
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
 
  []
 
@@ -538,166 +532,143 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
+
+ []
+
 [4 <./arm.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 185--186
+Underfull \hbox (badness 10000) in paragraph at lines 188--189
 
  []
 
-<keywords1.png, id=130, 509.905pt x 323.2075pt>
+<keywords1.png, id=132, 509.905pt x 323.2075pt>
 File: keywords1.png Graphic file (type png)
 <use keywords1.png>
-Package pdftex.def Info: keywords1.png  used on input line 191.
+Package pdftex.def Info: keywords1.png  used on input line 194.
 (pdftex.def)             Requested size: 254.95187pt x 161.60335pt.
 [6]
-<keywords2.png, id=142, 536.0025pt x 264.99pt>
+<keywords2.png, id=145, 536.0025pt x 264.99pt>
 File: keywords2.png Graphic file (type png)
 <use keywords2.png>
-Package pdftex.def Info: keywords2.png  used on input line 197.
+Package pdftex.def Info: keywords2.png  used on input line 200.
 (pdftex.def)             Requested size: 268.0006pt x 132.49467pt.
-<keywords3.png, id=143, 177.66376pt x 251.94125pt>
+<keywords3.png, id=146, 177.66376pt x 251.94125pt>
 File: keywords3.png Graphic file (type png)
 <use keywords3.png>
-Package pdftex.def Info: keywords3.png  used on input line 202.
+Package pdftex.def Info: keywords3.png  used on input line 205.
 (pdftex.def)             Requested size: 88.83165pt x 125.9703pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 205--206
+Underfull \hbox (badness 10000) in paragraph at lines 208--209
 
  []
 
-<primitives.png, id=144, 911.405pt x 647.41875pt>
+<primitives.png, id=147, 911.405pt x 647.41875pt>
 File: primitives.png Graphic file (type png)
 <use primitives.png>
-Package pdftex.def Info: primitives.png  used on input line 213.
+Package pdftex.def Info: primitives.png  used on input line 216.
 (pdftex.def)             Requested size: 455.70139pt x 323.70857pt.
 [7 <./keywords1.png> <./keywords2.png> <./keywords3.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 217--218
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
 
  []
 
 [8 <./primitives.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 237--238
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--240
+Underfull \hbox (badness 10000) in paragraph at lines 242--243
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--242
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
 
  []
 
 [9]
-<math1.png, id=168, 516.93124pt x 477.785pt>
+<math1.png, id=169, 516.93124pt x 477.785pt>
 File: math1.png Graphic file (type png)
 <use math1.png>
-Package pdftex.def Info: math1.png  used on input line 290.
+Package pdftex.def Info: math1.png  used on input line 293.
 (pdftex.def)             Requested size: 258.46498pt x 238.8919pt.
  [10]
-Underfull \hbox (badness 10000) in paragraph at lines 294--295
+Underfull \hbox (badness 10000) in paragraph at lines 297--298
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 296--298
+Underfull \hbox (badness 10000) in paragraph at lines 299--301
 
  []
 
 [11 <./math1.png>]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 335.
+(hyperref)                than one, level fixed on input line 338.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 335.
+(hyperref)                removing `math shift' on input line 338.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 335.
+(hyperref)                removing `math shift' on input line 338.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 336--337
+Underfull \hbox (badness 10000) in paragraph at lines 339--340
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 338--342
+Underfull \hbox (badness 10000) in paragraph at lines 341--345
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 343--352
+Underfull \hbox (badness 10000) in paragraph at lines 346--355
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 354.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 357.
 [13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 354.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 357.
  (./Chapter1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 354.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 354.
-
-
-Package rerunfilecheck Warning: File `Chapter1.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Chapter1.out':
-(rerunfilecheck)             Before: 058DC09BA1E6944E4BE1E3DE524621A6;841
-(rerunfilecheck)             After:  96C7EC8997581C80FF8E806C4AD0A9EC;888.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 354.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 357.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 357.
+Package rerunfilecheck Info: File `Chapter1.out' has not changed.
+(rerunfilecheck)             Checksum: 96C7EC8997581C80FF8E806C4AD0A9EC;888.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 357.
  ) 
 Here is how much of TeX's memory you used:
- 8926 strings out of 492616
- 123636 string characters out of 6135178
+ 8921 strings out of 492616
+ 123558 string characters out of 6135178
  434620 words of memory out of 5000000
- 12614 multiletter control sequences out of 15000+600000
+ 12615 multiletter control sequences out of 15000+600000
  8809 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  31i,13n,43p,965b,1845s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsubsection.4.0.1} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.2} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.4} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.3} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.2} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.1} has been referenced but does not ex
-ist, replaced by a fixed one
-
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr
-/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb
->
-Output written on Chapter1.pdf (15 pages, 386791 bytes).
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></u
+sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.p
+fb>
+Output written on Chapter1.pdf (15 pages, 387682 bytes).
 PDF statistics:
- 306 PDF objects out of 1000 (max. 8388607)
- 267 compressed objects within 3 object streams
- 109 named destinations out of 1000 (max. 500000)
- 137 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 302 PDF objects out of 1000 (max. 8388607)
+ 263 compressed objects within 3 object streams
+ 103 named destinations out of 1000 (max. 500000)
+ 145 words of extra memory for PDF output out of 10000 (max. 10000000)
 

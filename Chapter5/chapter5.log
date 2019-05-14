@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.3.9)  13 MAY 2019 17:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.3.9)  13 MAY 2019 22:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**chapter3.tex
-(./chapter3.tex
+**chapter5.tex
+(./chapter5.tex
 LaTeX2e <2018-12-01>
 (/usr/share/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
@@ -339,23 +339,23 @@ File: lstlang1.sty 2018/09/02 1.7 listings language file
 LaTeX Warning: Unused global option(s):
     [11].
 
-(./chapter3.aux)
-\openout1 = `chapter3.aux'.
+(./chapter5.aux)
+\openout1 = `chapter5.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -422,7 +422,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box34
-Package hyperref Info: Link coloring ON on input line 62.
+Package hyperref Info: Link coloring ON on input line 63.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -432,96 +432,134 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count128
 )
-LaTeX Info: Redefining \ref on input line 62.
-LaTeX Info: Redefining \pageref on input line 62.
-LaTeX Info: Redefining \nameref on input line 62.
+LaTeX Info: Redefining \ref on input line 63.
+LaTeX Info: Redefining \pageref on input line 63.
+LaTeX Info: Redefining \nameref on input line 63.
 
-(./chapter3.out) (./chapter3.out)
+(./chapter5.out) (./chapter5.out)
 \@outlinefile=\write3
-\openout3 = `chapter3.out'.
+\openout3 = `chapter5.out'.
 
 \c@lstlisting=\count129
-<background.jpg, id=56, 548.0475pt x 338.76563pt>
+<background.jpg, id=4, 548.0475pt x 338.76563pt>
 File: background.jpg Graphic file (type jpg)
 <use background.jpg>
-Package pdftex.def Info: background.jpg  used on input line 76.
+Package pdftex.def Info: background.jpg  used on input line 77.
 (pdftex.def)             Requested size: 614.34421pt x 379.74573pt.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./background.jpg>] (./chap
-ter3.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 3.
-
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 3.
-
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+ter5.toc)
 \tf@toc=\write4
-\openout4 = `chapter3.toc'.
+\openout4 = `chapter5.toc'.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.80 \clearpage
+l.81 \clearpage
                 [1]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 85.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 86.
  (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 85.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 86.
 
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 94.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 94.
+ []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.114 \subsection
-                 {While} [1
+l.110 
+       [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 138--139
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
-[2] [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 214.
- [4] [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 214.
- (./chapter3.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 214.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 214.
+
+LaTeX Warning: Reference `sec:mods' on page 2 undefined on input line 127.
 
 
-Package rerunfilecheck Warning: File `chapter3.out' has changed.
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
+
+ []
+
+[3]
+LaTeX Font Info:    Try loading font information for U+msa on input line 160.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 160.
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
+
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 201.
+[5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 201.
+ (./chapter5.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 201.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 201.
+
+
+Package rerunfilecheck Warning: File `chapter5.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
-Package rerunfilecheck Info: Checksums for `chapter3.out':
-(rerunfilecheck)             Before: B93889D33D1B1111991E24C431EA3A18;823
-(rerunfilecheck)             After:  7E2FF1DEB11FB516FDBF3A4F0946EFBF;823.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 214.
+Package rerunfilecheck Info: Checksums for `chapter5.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  7A6FEAA7FD3739BF7AFCE8789785C4AC;589.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 201.
  ) 
 Here is how much of TeX's memory you used:
- 8883 strings out of 492616
- 122987 string characters out of 6135178
- 434620 words of memory out of 5000000
- 12594 multiletter control sequences out of 15000+600000
- 12988 words of font info for 50 fonts, out of 8000000 for 9000
+ 8829 strings out of 492616
+ 122329 string characters out of 6135178
+ 426620 words of memory out of 5000000
+ 12568 multiletter control sequences out of 15000+600000
+ 8641 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 31i,13n,43p,704b,1176s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 31i,13n,43p,1028b,1847s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/type1/pub
@@ -530,10 +568,10 @@ m/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></u
 sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmtt9.pfb>
-Output written on chapter3.pdf (7 pages, 174015 bytes).
+Output written on chapter5.pdf (7 pages, 169545 bytes).
 PDF statistics:
- 228 PDF objects out of 1000 (max. 8388607)
- 206 compressed objects within 3 object streams
- 87 named destinations out of 1000 (max. 500000)
- 110 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 150 PDF objects out of 1000 (max. 8388607)
+ 129 compressed objects within 2 object streams
+ 67 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

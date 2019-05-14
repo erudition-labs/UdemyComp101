@@ -67,7 +67,7 @@ keepaspectratio]{background.jpg}}%
 \Large{\textbf{Computer Science 101: Introduction to Java and Algorithms}}\\
 \vfill
 \line(1,0){400}\\
-\huge{\textbf{Section 4: Arrays}}\\
+\huge{\textbf{Section 5: Methods}}\\
 \line(1,0){400}\\
 \vfill
 Erudition Labs\\
@@ -83,13 +83,119 @@ Computer Science 101: Introduction to Java and Algorithms\\
 
 \section{Terminology}
 \begin{itemize}
-  \item \textbf{\textit{Memory}} --
-  Memory is where all the action happens. Many people often refer to it as storage space although that is not entirely true. When programmers talk of memory, we are talking about addressable memory. This means memory that computers can create addresses for and thus use. Memory is NOT hard drive space. It is RAM. The amount of memory you have depends on two things. The amount of RAM you have and the operating systems you are using (eg. 32 bit windows vs 64 bit windows). With 32 bit systems, you are limited to 4 GB of ram where as 64 bit machines are (theoretically since we haven`t done it) limited to 16.8 million terabytes of RAM. Everything happens in your memory. When you start up your computer, windows (or mac, linux, android, IOS...whatever) gets loaded into memory. Whenever you launch a program, it gets loaded into memory. Pretty much whenever you do anything on a computer, it`s done in memory. As a programmer, you generally deal with two types of memory, heap and stack. Refer to \autoref{sec:heap} to lean more about heap vs stack.
+  \item \textbf{\textit{Method call (aka call a method)}} --
+  This simply means that we want to use a method that we wrote or that someone else wrote. We want to to execute the code with the parameters we give it and give us back the value.
 
+  \item \textbf{\textit{Pass parameter}} --
+  Often when we define a method, we also define parameters that the method needs for it to do its work. When we actually call the method, we often say that we are passing parameters to it. We are talking about the values that we give to the method when we call it.
   
-
+  \item \textbf{\textit{Function (or method} Signature} --
+  The method signature is what the compiler remembers when we define a method. When we overload methods, the only thing the compiler looks at is the method signature. This is made up of the return type, the method name and the types of the parameters. For example, int calcArea(int x, int y), the method signature would be int calcArea(int, int). If we were to simply change the parameter names, the method signature would be the same.
+  
+  \item \textbf{\textit{Go out of Scope}} --
+	In this section we define scope. When we go out of scope, are going out of the block where that variable is defined. Once that happens, that variable no longer exists in memory and cannot use it anymore.
+  
 \end{itemize}
 \section{Pre-Chapter}
+\subsection{Memory Revisited -- Stack}
+For this Chapter it will be helpful to know a bit more about the Stack (stack memory). It is a LIFO data structure. LIFO stands for ``Last in First Out``. All this means is that the last thing that you put onto the stack will be the first thing that you take off of this stack. This is helpful for maintaining a top-down order when returning from method calls.
 
+\subsection{Modifier Keywords}
+\label{sec:mods}
+\subsection{static}
+
+\section{Methods (Video Series Lecture 28 and 29)}
+\subsection{What is A Method and Why Use It?}
+This is a major concept in programming. In Java we use methods and functions interchangeably. A method is a means of writing code once and writing it well. If we have some piece of code that we are going to be using multiple times in a multiple places, it would be worth it to just write it once and use it in those places. The idea is that, the more we have to write, the higher the chances we have of making a mistake. But if we write that piece of code as a single, self-contained unit, then we only need to write it once. If we make mistakes, then the mistakes are only in that one place. As opposed to copying and pasting those pieces of code all over the place and having to fix all of them when you find a problem.\\
+
+Methods allow you to design a piece of code that does one thing, and does it very well. This allows us to have better designed, more easily maintainable and more secure code.\\
+\subsection{Methods}
+Methods take the form of
+\begin{lstlisting}
+modifier returnType nameOfMethod (Parameter List) {
+   // method body
+}
+
+//for example, as seen in the video series
+public static void printVal() {
+    int a = 11;
+    System.out.println("Value = " + a);
+}
+
+\end{lstlisting}
+
+Your can read about modifiers in \autoref{sec:mods}. The return types are all the types that we talked about in the first chapter such as int, String, boolean, double etc. This is the type of value that we are going to return from the method (we often refer to this as the return type). Then we have the name of the method. Just like naming a variable, you have to give the method a name for you to reference later. Finally, we give a list of parameters to the method. These are the values that we want the method to use when it executes its code. Note that the parameters are usually copies of the variables that you pass in. So when you method executes, it is dealing with copies of your data instead of the original values. This means that when you execute the method, anything you do to those values does not affect the original values.\\
+
+If we look at the example, we have ``public static void printVal()`` The method is accessible by anyone, returns nothing and has no parameters. Let`s look at a method that you have used over and over.
+
+\begin{lstlisting}
+public static void main(String args[]) {
+
+}
+\end{lstlisting}
+Yes that`s right, the main method. The main method is the main entry point of the program so it makes sense that it is public for everyone to use. It returns nothing and takes parameters of type String. The parameter that we pass for main is a String array variable called ``args`` (short for arguments, aka command line arguments. Don`t worry about what this means yet).
+
+\section{Parameters}
+Parameters are variables that we give a method to do some work with. For all of the primitive types, the method actually makes a copy of the parameters that we pass in. This means that we can mess with those parameters without having to worry about the original variables. So if we want to make an affect on the program, we can return the result of the work done on those copies.\\
+
+You can pass as many variables as you would like, but long method signatures are discouraged because they can be complex, hard to read or just plain too long. Generally 3 to 4 variables are the maximum. Anything more and you would pass the parameters using an array or on object. We will cover objects in the next chapter. \\
+
+\section{Scope}
+Note that we cannot access the parameters from outside of a method itself because of what we call scope. Scope has to do with how long variables exist in memory. If we just kept them all in memory then we would eventually run out of memory. So it is important that we clear out things that we don`t need anymore. One such way that we do that is with scope resolution. Basically anything defined between curly braces will exist until we exit the curly braces. We call this block scope.\\
+
+Methods are an example of block scope. We define a method and everything in that block exists until the method returns. It turns out we can actually define blocks where ever we want. So first, lets look at method scope.
+
+\begin{lstlisting}
+public static void main(String args[]) {
+	int x = 4;
+	int y = 5;
+	System.out.println(calcArea(x, y));
+}
+
+public static int calcArea(int x, int y) {
+ return x * y;
+}
+\end{lstlisting}
+
+In this method we have two parameters, $x$ and $y$. In the main method, we call the calcArea method. When this happens, we actually pass in copies of the original $x$ and $y$. The method parameters $x$ and $y$ cannot be accessed outside of the calcArea method. But why?\\
+
+Well to figure this out, we need to look at what happens to the stack (stack memory). When a method is called, the program creates what we call a stack frame. A stack frame is just a collection of variables and information about the method being called, as well as how to get back to the rest of the program when the method is done. So when a method is called, the return address is pushed on to the stack. The return address is just the address of the next code to be executed once the method returns. This way, the program can pick up where it left off. Then the stack frame is pushed on to the stack. Now the stack frame consists of the parameters and the space needed to store those parameters. Once the method is done and returns, the stack frame is popped off of the stack, (aka taken out of memory) so those variables and the spaces no longer exist. In essence, the parameters and their space in memory only exist within that stack frame and thus there is no way to access it from out side of that frame.\\
+
+Now recall from when we talked about switch statements. If you were to just google it, you would find something in the form of
+
+\begin{lstlisting}
+switch(expression) {
+  case x:
+    // if x true do this
+    break;
+  case y:
+    // if y true do this
+    break;
+  default:
+    // if none are true do this
+}
+\end{lstlisting}
+
+However, I mentioned that I prefer to write it this way, 
+\begin{lstlisting}
+switch(expression) {
+  case x:
+  {
+    // if x true do this
+  } break;
+  case y:
+  {
+    // if y true do this
+  } break;
+  default:
+  {
+    // if none are true do this
+  }
+}
+\end{lstlisting}
+
+It is by no means mandatory, but I do it to enforce block scope on the different cases. One of the mistakes that I often catch people doing is that they use the first way, but the declare some variable in a case statement and then use it later in some other case statement without realizing that it is already some value. Using the extra curly braces as blocks for each case enforces the fact that you can only use variables defined in that case statement within that case. This prevents us from accidently overwriting variables or use the wrong values when we define them in the other cases. We say that these variables are local to that block. In the case of methods, we say that the parameters and the variables that are defined inside that method are local to that method.\\
+
+We also have global variables. These variables are accessible from everywhere in the program. However, many programmers have deemed global variables as evil because too many of them become confusing and hard to maintain. The fewer globals the better. These types of variables are declared outside of the main method at the top of the program.
 
 \end{document}
