@@ -94,15 +94,28 @@ Computer Science 101: Introduction to Java and Algorithms\\
   
   \item \textbf{\textit{Go out of Scope}} --
 	In this section we define scope. When we go out of scope, are going out of the block where that variable is defined. Once that happens, that variable no longer exists in memory and cannot use it anymore.
+	
+  \item \textbf{\textit{Globals}} -- Often use this to refer to global variables.
   
 \end{itemize}
 \section{Pre-Chapter}
 \subsection{Memory Revisited -- Stack}
-For this Chapter it will be helpful to know a bit more about the Stack (stack memory). It is a LIFO data structure. LIFO stands for ``Last in First Out``. All this means is that the last thing that you put onto the stack will be the first thing that you take off of this stack. This is helpful for maintaining a top-down order when returning from method calls.
+For this Chapter it will be helpful to know a bit more about the Stack (stack memory). It is a LIFO data structure. LIFO stands for ``Last in First Out``. All this means is that the last thing that you put onto the stack will be the first thing that you take off of this stack. This is helpful for maintaining a top-down order when returning from method calls. 
 
-\subsection{Modifier Keywords}
+\subsection{Modifier Keywords (Access Control -- public)}
 \label{sec:mods}
+So far you have seen two modifier keywords, static and final. Final we introduced in a different chapter and static you have just seen around with the main method. We will talk about static in the next subsection. Here i`d like to introduce ``Access Control Modifiers``. These keywords do exactly what they sound like they do, they allow you to specify who has access to your variables. There are four levels, public, private, protected and just nothing. By nothing I simply mean how you have been declaring variables this whole time, like ``int a = 5;`` These variables are package private, meaning they can be accessed by pretty much anything within a package. ``Private`` is only accessible from within classes and ``protected`` can be accessed from within the class and its subclasses. What does all this mean??? Don`t worry about it too much yet as we will be going back to all of those as well as what a ``package`` is later.\\
+
+The main point of this subsection is simply to introduce the term ``access modifier`` and let you know what the ``public``modifier does. As said before, public allows anyone to access your variable or method or whatever. When you you write code that other people will use, they will be using your public methods and variables. This keyword allows you to define who is allowed to access what.\\
+
+For example, you have been using the public modifier this whole time, just look at main.
+\begin{lstlisting}
+public static void main(String[] args) { }
+\end{lstlisting}
+
+Granted, you have no choice but to make your main method like this, but it`s like that for a reason. Main is your main entry point to the program, so it makes sense that anyone should be able to access it, including the operating system.
 \subsection{static}
+This keyword is considered a modifier, but not an access modifier. The static keyword is mainly used for memory management with variables, methods, blocks etc. It`s hard to talk too much about this until we get to classes and objects. All you need to know about static right now is when applied to methods. Just know that static methods belong to the class and can modify static variables. The thing to really know for this section is  that static methods cannot call non-static methods and cannot use non-static data. This simply means that, for now, all of your methods need to be static. If, however, you would like to learn more now, i`d recommend \url{<https://www.javatpoint.com/static-keyword-in-java#staticm>}
 
 \section{Methods (Video Series Lecture 28 and 29)}
 \subsection{What is A Method and Why Use It?}
@@ -141,6 +154,7 @@ Parameters are variables that we give a method to do some work with. For all of 
 You can pass as many variables as you would like, but long method signatures are discouraged because they can be complex, hard to read or just plain too long. Generally 3 to 4 variables are the maximum. Anything more and you would pass the parameters using an array or on object. We will cover objects in the next chapter. \\
 
 \section{Scope}
+\subsection{Block Scope}
 Note that we cannot access the parameters from outside of a method itself because of what we call scope. Scope has to do with how long variables exist in memory. If we just kept them all in memory then we would eventually run out of memory. So it is important that we clear out things that we don`t need anymore. One such way that we do that is with scope resolution. Basically anything defined between curly braces will exist until we exit the curly braces. We call this block scope.\\
 
 Methods are an example of block scope. We define a method and everything in that block exists until the method returns. It turns out we can actually define blocks where ever we want. So first, lets look at method scope.
@@ -195,7 +209,7 @@ switch(expression) {
 \end{lstlisting}
 
 It is by no means mandatory, but I do it to enforce block scope on the different cases. One of the mistakes that I often catch people doing is that they use the first way, but the declare some variable in a case statement and then use it later in some other case statement without realizing that it is already some value. Using the extra curly braces as blocks for each case enforces the fact that you can only use variables defined in that case statement within that case. This prevents us from accidently overwriting variables or use the wrong values when we define them in the other cases. We say that these variables are local to that block. In the case of methods, we say that the parameters and the variables that are defined inside that method are local to that method.\\
-
+\subsection{Global Scope}
 We also have global variables. These variables are accessible from everywhere in the program. However, many programmers have deemed global variables as evil because too many of them become confusing and hard to maintain. The fewer globals the better. These types of variables are declared outside of the main method at the top of the program.
 
 \end{document}
