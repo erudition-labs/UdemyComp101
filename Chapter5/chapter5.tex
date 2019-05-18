@@ -111,7 +111,7 @@ The main point of this subsection is simply to introduce the term ``access modif
 For example, you have been using the public modifier this whole time, just look at main.
 \begin{lstlisting}
 public static void main(String[] args) { }
-\end{lstlisting}
+\end{lstlisting} 
 
 Granted, you have no choice but to make your main method like this, but it`s like that for a reason. Main is your main entry point to the program, so it makes sense that anyone should be able to access it, including the operating system.
 \subsection{static}
@@ -148,7 +148,7 @@ public static void main(String args[]) {
 \end{lstlisting}
 Yes that`s right, the main method. The main method is the main entry point of the program so it makes sense that it is public for everyone to use. It returns nothing and takes parameters of type String. The parameter that we pass for main is a String array variable called ``args`` (short for arguments, aka command line arguments. Don`t worry about what this means yet).
 
-\section{Parameters}
+\subsection{Parameters}
 Parameters are variables that we give a method to do some work with. For all of the primitive types, the method actually makes a copy of the parameters that we pass in. This means that we can mess with those parameters without having to worry about the original variables. So if we want to make an affect on the program, we can return the result of the work done on those copies.\\
 
 You can pass as many variables as you would like, but long method signatures are discouraged because they can be complex, hard to read or just plain too long. Generally 3 to 4 variables are the maximum. Anything more and you would pass the parameters using an array or on object. We will cover objects in the next chapter. \\
@@ -212,4 +212,55 @@ It is by no means mandatory, but I do it to enforce block scope on the different
 \subsection{Global Scope}
 We also have global variables. These variables are accessible from everywhere in the program. However, many programmers have deemed global variables as evil because too many of them become confusing and hard to maintain. The fewer globals the better. These types of variables are declared outside of the main method at the top of the program.
 
+
+\section{Returning}
+You`ll notice when we define out methods that we must include the return type. So far we have pretty much used the ``void`` return type for everything, which just means we don`t return anything. This is good enough for simple programs, but once we start creating larger programs, it becomes confusing and inefficient to write code this way. Since parameters are only copies of the data we want to work with, in order to make actual change to your data, you would have to define a bunch of variables, make void methods to operate on them and then store them all. We would have to define every variable we would ever need, which would take up all our memory. It simply isn`t feasible to write programs using only void methods and global variables. So what can we do about it? We can have the method return a copy of the solution and then just free up the memory that the method was using.\\
+
+\section{Method Overloading}
+Sometimes we need to create methods that do something similar but we may have different parameters depending on the situation. You can methods of the same name as long as the method signature is different. I think the best way to describe this is with an example. The popular example is simply a function that calculates the sum of it`s parameters.
+
+\begin{lstlisting}
+class Main {
+    //This sum takes two int parameters 
+    public static int sum(int x, int y) { 
+        return (x + y); 
+    } 
+  
+    //This sum takes three int parameters 
+    public static int sum(int x, int y, int z) { 
+        return (x + y + z); 
+    } 
+  
+    //This sum takes two double parameters 
+    public static double sum(double x, double y)  { 
+        return (x + y); 
+    } 
+    
+    //sum of however many numbers we are given
+    public static int sum(int[] nums) {
+    int sum = 0;
+    	for(int i=0;i<nums.length; i++) {
+    		sum += nums[i];
+    	}
+    	
+    	return sum;
+    }
+  
+    public static void main(String args[]) 
+    { 
+        System.out.println(sum(10, 20)); 
+        System.out.println(sum(10, 20, 30)); 
+        System.out.println(sum(10.5, 20.5)); 
+        System.out.println(sum(new int[] {4, 5, 7, 23, 55, 100}));
+    } 
+}
+\end{lstlisting}
+
+In this program, we would like to be able to handle integers and decimal numbers. So to do so, we create methods that handle integers, decimals and an array of integers. These methods all give the same result, aka the sum, but deal with different data and calculate that sum differently. This becomes convenient for naming and for when someone else has to use your code. We use this quite a bit when working with classes which we will cover in the next chapter.
+
+\section{Good Practices}
+\subsection{Naming}
+In Java we tend to do things in camel case. That means the for methods, we start the name of the method with a lower case and then capitalize any other words. So for example, ``thisIsCamelCase``. Use descriptive names to name your methods but also don`t make the names too long. It should be easy to remember and tell the programmer exactly what it does.
+\subsection{Parameters}
+There is no limits to how many parameters you have for a method, but it`s a good idea to have as few as possible.
 \end{document}
