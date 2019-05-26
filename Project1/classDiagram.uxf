@@ -6,24 +6,29 @@
     <coordinates>
       <x>590</x>
       <y>210</y>
-      <w>320</w>
-      <h>230</h>
+      <w>420</w>
+      <h>320</h>
     </coordinates>
     <panel_attributes>GameOfLife
 --
-_+world: int[][]_
 _+isRunning: boolean_
-_+height: int_
-_+width: int_
+_+WIDTH: int_
+_+HEIGHT: int_
+_+LIVES: int_
+_+DIES: int_
+_+ALIVE: int_
+_+DEAD: int_
 --
 _+main(args: String[]): void_
 _+epoch(world: int[][]): int[][]_
-_+fitness(x: int, y: int, neighbors: int[][]): int_
+_+fitness(row: int, col: int, grid: int[][]): int_
 _+randomSeed(): int[][]_
 _+run(world: int[][]): void_
 _+render(grid: int[][]): void_
 _+exists(x: int, y: int): boolean_
 _+clearScreen(): void_
+_+countAliveNeighbors(row: int, col: int, world: int[][]): int_
+_+gliders(): int[][]_
 
 
 
