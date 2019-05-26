@@ -13,11 +13,13 @@
 --
 _+world: int[][]_
 _+isRunning: boolean_
+_+height: int_
+_+width: int_
 --
 _+main(args: String[]): void_
 _+epoch(): void_
 _+fitness(x: int, y: int): int_
-_+randomSeed(): void_
+_+randomSeed(): int[][]_
 _+run(): void_
 _+render(): void_
 
