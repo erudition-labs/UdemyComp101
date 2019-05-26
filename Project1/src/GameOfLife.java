@@ -151,7 +151,7 @@ public class GameOfLife {
     }
 
     public static void main(String[] args) {
-        int[][] world = randomSeed();
+        int[][] world = gliders();//randomSeed();
         isRunning = true;
         run(world);
 

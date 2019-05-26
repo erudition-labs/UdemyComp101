@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.3.9)  25 MAY 2019 23:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.3.9)  26 MAY 2019 12:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -441,7 +441,7 @@ LaTeX Info: Redefining \nameref on input line 63.
 \openout3 = `project1.out'.
 
 \c@lstlisting=\count129
-<background.jpg, id=36, 548.0475pt x 338.76563pt>
+<background.jpg, id=44, 548.0475pt x 338.76563pt>
 File: background.jpg Graphic file (type jpg)
 <use background.jpg>
 Package pdftex.def Info: background.jpg  used on input line 77.
@@ -490,33 +490,59 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--113
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 121.
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
+
+ []
+
 [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 121.
+<classDiagram.png, id=82, 461.725pt x 371.3875pt>
+File: classDiagram.png Graphic file (type png)
+<use classDiagram.png>
+Package pdftex.def Info: classDiagram.png  used on input line 127.
+(pdftex.def)             Requested size: 346.29291pt x 278.53993pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 136.
+
+(/usr/share/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 136.
+ [3 <./classDiagram.png (PNG copy)>] [4]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 178.
+ [5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 178.
  (./project1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 121.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 121.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 178.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 178.
 Package rerunfilecheck Info: File `project1.out' has not changed.
-(rerunfilecheck)             Checksum: E8C259C57F1F4288FE7D0A7C8F6BA104;515.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 121.
+(rerunfilecheck)             Checksum: 9DC8B560231084897857EB3A64EE5C75;667.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 178.
  ) 
 Here is how much of TeX's memory you used:
- 8430 strings out of 492616
- 118705 string characters out of 6135178
- 415620 words of memory out of 5000000
- 12225 multiletter control sequences out of 15000+600000
- 7984 words of font info for 31 fonts, out of 8000000 for 9000
+ 8463 strings out of 492616
+ 119216 string characters out of 6135178
+ 416620 words of memory out of 5000000
+ 12247 multiletter control sequences out of 15000+600000
+ 8343 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 31i,13n,43p,1086b,345s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 31i,13n,43p,1086b,401s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sl10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on project1.pdf (4 pages, 139175 bytes).
+ts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></u
+sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on project1.pdf (7 pages, 186755 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
- 84 compressed objects within 1 object stream
- 16 named destinations out of 1000 (max. 500000)
- 70 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 134 PDF objects out of 1000 (max. 8388607)
+ 113 compressed objects within 2 object streams
+ 21 named destinations out of 1000 (max. 500000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

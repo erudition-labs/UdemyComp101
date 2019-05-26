@@ -7,7 +7,7 @@
       <x>590</x>
       <y>210</y>
       <w>420</w>
-      <h>320</h>
+      <h>330</h>
     </coordinates>
     <panel_attributes>GameOfLife
 --
@@ -18,6 +18,7 @@ _+LIVES: int_
 _+DIES: int_
 _+ALIVE: int_
 _+DEAD: int_
+_+generations: int_
 --
 _+main(args: String[]): void_
 _+epoch(world: int[][]): int[][]_
@@ -25,7 +26,7 @@ _+fitness(row: int, col: int, grid: int[][]): int_
 _+randomSeed(): int[][]_
 _+run(world: int[][]): void_
 _+render(grid: int[][]): void_
-_+exists(x: int, y: int): boolean_
+_+exists(row: int, col: int): boolean_
 _+clearScreen(): void_
 _+countAliveNeighbors(row: int, col: int, world: int[][]): int_
 _+gliders(): int[][]_

@@ -118,4 +118,61 @@ Now how can we apply the rules that govern that states of the cells. Well we cou
 
 \subsubsection{Visualization}
 To Keep things simple, for now, we will simply be printing all of the live cells in the standard output, aka terminal. In other words, the simulation will be text based for now.
+
+\subsubsection{UML Class Diagram}
+UML stands for Universal Modeling Language. You may or may not learn this in an intro class, but if you plan on pursing software engineering, you will learn about this. There are many different types of diagrams for visualizing business requirements, sequencing out program flow, visualizing how the user interacts with the system, etc.  There is so many different diagrams that I don`t remember them all. However, they are particularly useful for organizing ideas and figuring out requirements for the product without ever having to write any code. This is a good idea if you are working with a client that knows nothing about programming. In this course we will be using the UML Class Diagrams to map out our code. In this case, we only have one class, but later will have more and we can use these diagrams to show how they all relate to each other.\\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.75]{classDiagram.png}
+\end{figure}
+
+Everything in the diagram has a purpose. The top part has the name of the class ``GameOfLife``. Under that is all the members of the class (we will learn more about what that means in later sections). Notice that we have the name of the variables and methods as well as their types and return types. The ``+`` means that these things are all public (``-`` is private and there are others). Finally, Notice that they are all underlined. Underlining means that they are static. So far, everything we will do will be static until we get to the classes sections.\\
+
+If you would like to read more about these diagrams, checkout \url{<https://tallyfy.com/uml-diagram/>}
+
+\subsubsection{Methods Overview}
+\begin{itemize}
+  \item \textbf{\textit{isRunning: boolean}} --
+	This will be used to start and stop the program. Although at the moment we won`t be having a method to stop. I basically put this in there for future use.
+
+  \item \textbf{\textit{WIDTH: int, HEIGHT int}} --
+	When making global constant (aka final) variables, it is often good practice to capitalize all the letters in the name. These two variables will be used to define the size of the array that we will use to represent the world.
+	
+	  \item \textbf{\textit{LIVES: int, DIES:int, ALIVE: int, DEAD: int}} --
+	These variables really serve no purpose other than to make the code more readable. Scattered throughout the code, we can talk about being alive or dead as 1 or 0, similarly we can talk about a cell getting to live or die by also using 1 and 0. So we can have a bunch of 1`s and 0`s everywhere and look at the rest of the condition to figure out what we are talking about in that particular spot, OR we can make named variables that make more sense as soon as we see it. It`s a good idea to opt in for better readability. 
+	
+	\item \textbf{\textit{generations: int}} --
+	Used to keep count of how many times we have updated the world, simply for the sake of knowing because it can be interesting to see how long it takes for things to evolve.
+	 \item \textbf{\textit{main}} --
+	We have to have a main method.
+	
+	  \item \textbf{\textit{epoch(world: int[][])}} --
+		In English, an epoch is just some moment in time where something meaningful happens. In our case, an epoch is basically a generation. An epoch will be applying the rules through one iteration of our 2d array 
+	
+	  \item \textbf{\textit{fitness(row: int, col: int, grid: int[][])}} --
+	This method will look at a given cell in the 2d array. Once we have that cell it will look at all of it`s neighbors, and go through the game of life rules to determine if that cell will live or die.
+	
+	\item \textbf{\textit{randomSeed()}} --
+	This method will will fill our 2d array with random living and dead cells.
+	
+		\item \textbf{\textit{run(world: int[][])}} --
+	This is the driver of the game. Given a world, it will loop until we decide to kill the program, running the game.
+	
+		\item \textbf{\textit{render(grid: int[][])}} --
+	Given a grid, this will print the world to the console screen.
+	
+		\item \textbf{\textit{exists(row: int, col: int)}} --
+	Given the coordinates of the cell, this method will see if it is in the 2d array or not. If it`s not, then this will keep us from getting an ArrayIndexOutOfBounds exception.
+	
+		\item \textbf{\textit{clearScreen()}} --
+	This just clears the console for the next epoch to be printed. Note that this only works in the terminal.
+	
+		\item \textbf{\textit{countLivingNeighbors(row: int, col: int, world: int[][])}} --
+	Given a cell and the world, count all of the living neighbors. Note that Conway uses the 8 cell  Moore neighborhood. As opposed to the 4 cell  Von Neumann neighborhood.
+	
+		\item \textbf{\textit{gliders()}} --
+		Puts some glider configurations into the 2d world.
+\end{itemize}
+
 \end{document}
