@@ -102,14 +102,11 @@ public class GameOfLife {
         tmp[10+2][10+3] = 1;
 
 
-
         tmp[HEIGHT-2][WIDTH-3] = 1;
         tmp[HEIGHT-3][WIDTH-4] = 1;
         tmp[HEIGHT-4][WIDTH-4] = 1;
         tmp[HEIGHT-4][WIDTH-3] = 1;
         tmp[HEIGHT-4][WIDTH-2] = 1;
-
-
 
 
         tmp[HEIGHT-11][WIDTH-11] = 1;
@@ -125,7 +122,7 @@ public class GameOfLife {
             render(world);
             world = epoch(world);
             try {
-                Thread.sleep(1000);
+                Thread.sleep(800);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -154,7 +151,7 @@ public class GameOfLife {
     }
 
     public static void main(String[] args) {
-        int[][] world = gliders(); //randomSeed();
+        int[][] world = randomSeed();
         isRunning = true;
         run(world);
 
