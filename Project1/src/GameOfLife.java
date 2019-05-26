@@ -3,8 +3,8 @@ import java.util.Random;
 public class GameOfLife {
     //static int[][] world;
     static boolean isRunning;
-    final static int width = 10;
-    final static int height = 10;
+    final static int width = 100;
+    final static int height = 20;
 
     public static int[][] epoch(int[][] world) {
         for(int i=0; i<world.length; i++) {
@@ -51,7 +51,7 @@ public class GameOfLife {
     }
 
     public static int[][] randomSeed() {
-        int[][] tmp = new int[width][height];
+        int[][] tmp = new int[height][width];
         Random rand = new Random();
 
         for(int i=0; i<tmp.length; i++) {
@@ -66,21 +66,37 @@ public class GameOfLife {
         while(isRunning) {
             int[][] newWorld = epoch(world);
             render(newWorld);
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
         }
     }
 
     public static void render(int[][] grid) {
+        clearScreen();
         for(int i=0; i<grid.length; i++) {
             for(int j=0; j<grid[i].length; j++) {
-                System.out.print(grid[i][j] + "  ");
+                if(grid[i][j] == 1) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(".");
+                }
             }
             System.out.println();
         }
+        System.out.println();
+    }
+
+    public static void clearScreen() {
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
     }
 
     public static void main(String[] args) {
         int[][] world = randomSeed();
-        //render(world);
         isRunning = true;
         run(world);
 
