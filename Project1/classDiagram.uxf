@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>590</x>
+      <y>210</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>GameOfLife
+--
+_-world: int[][]_
+_-isRunning: boolean_
+--
+_+main(args: String[]): void_
+_+epoch(): void_
+_+fitness(x: int, y: int): int_
+_+randomSeed(): void_
+_+run(): void_
+_+render(): void_
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
