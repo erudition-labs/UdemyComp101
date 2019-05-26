@@ -11,8 +11,8 @@
     </coordinates>
     <panel_attributes>GameOfLife
 --
-_-world: int[][]_
-_-isRunning: boolean_
+_+world: int[][]_
+_+isRunning: boolean_
 --
 _+main(args: String[]): void_
 _+epoch(): void_
