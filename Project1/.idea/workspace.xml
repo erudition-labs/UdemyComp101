@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9cf72ad1-665d-4d44-95a4-7d67e44a28dd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1.aux" beforeDir="false" afterPath="$PROJECT_DIR$/project1.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1.log" beforeDir="false" afterPath="$PROJECT_DIR$/project1.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1.out" beforeDir="false" afterPath="$PROJECT_DIR$/project1.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/project1.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/project1.synctex.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1.tex" beforeDir="false" afterPath="$PROJECT_DIR$/project1.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1.toc" beforeDir="false" afterPath="$PROJECT_DIR$/project1.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameOfLife.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameOfLife.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameOfLife.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameOfLife.java" afterDir="false" />
-    </list>
+    <list default="true" id="9cf72ad1-665d-4d44-95a4-7d67e44a28dd" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +18,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/GameOfLife.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2140">
+            <state relative-caret-position="2248">
               <caret line="153" column="34" selection-start-line="153" selection-start-column="34" selection-end-line="153" selection-end-column="34" />
             </state>
           </provider>
@@ -145,6 +134,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-5" y="0" width="1931" height="1086" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16400427" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -162,7 +152,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Floobits" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2746114" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.2746114" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -178,7 +168,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/GameOfLife.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2140">
+        <state relative-caret-position="2248">
           <caret line="153" column="34" selection-start-line="153" selection-start-column="34" selection-end-line="153" selection-end-column="34" />
         </state>
       </provider>
