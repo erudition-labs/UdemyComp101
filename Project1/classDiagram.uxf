@@ -23,6 +23,7 @@ _+randomSeed(): int[][]_
 _+run(world: int[][]): void_
 _+render(grid: int[][]): void_
 _+exists(x: int, y: int): boolean_
+_+clearScreen(): void_
 
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.3.9)  17 MAY 2019 19:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.3.9)  25 MAY 2019 23:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -441,7 +441,7 @@ LaTeX Info: Redefining \nameref on input line 63.
 \openout3 = `project1.out'.
 
 \c@lstlisting=\count129
-<background.jpg, id=16, 548.0475pt x 338.76563pt>
+<background.jpg, id=36, 548.0475pt x 338.76563pt>
 File: background.jpg Graphic file (type jpg)
 <use background.jpg>
 Package pdftex.def Info: background.jpg  used on input line 77.
@@ -496,22 +496,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 121.
  (./project1.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 121.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 121.
-
-
-Package rerunfilecheck Warning: File `project1.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `project1.out':
-(rerunfilecheck)             Before: 9732C8A30196A8C9E60C4273188FB7DB;185
-(rerunfilecheck)             After:  E8C259C57F1F4288FE7D0A7C8F6BA104;515.
+Package rerunfilecheck Info: File `project1.out' has not changed.
+(rerunfilecheck)             Checksum: E8C259C57F1F4288FE7D0A7C8F6BA104;515.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 121.
  ) 
 Here is how much of TeX's memory you used:
- 8425 strings out of 492616
- 118615 string characters out of 6135178
+ 8430 strings out of 492616
+ 118705 string characters out of 6135178
  415620 words of memory out of 5000000
- 12220 multiletter control sequences out of 15000+600000
+ 12225 multiletter control sequences out of 15000+600000
  7984 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  31i,13n,43p,1086b,345s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -520,10 +513,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sl10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on project1.pdf (4 pages, 137516 bytes).
+Output written on project1.pdf (4 pages, 139175 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
- 64 compressed objects within 1 object stream
+ 98 PDF objects out of 1000 (max. 8388607)
+ 84 compressed objects within 1 object stream
  16 named destinations out of 1000 (max. 500000)
- 30 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 70 words of extra memory for PDF output out of 10000 (max. 10000000)
 
