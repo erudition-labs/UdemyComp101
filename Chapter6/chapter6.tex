@@ -83,7 +83,34 @@ Computer Science 101: Introduction to Java and Algorithms\\
 
 
 \section{Object Oriented Programming (OOP)}
+Back in the day of the ancient Greek philosophers, there was a guy named Plato. His writings are pretty famous especially since he is credited for writing down the teachings of Socrates. One of the questions that Plato was asking (and really all the Greek Philosophers) was, ``what is real?``. Plato had an interesting approach to this that I think matches up to how we use object oriented programming. For Plato, there was a creator who was basically a mathematician (the ancient Greeks loved math) and there exists some objective truth; some objective reality which he referred to as ``the Ideas`` or ``the Forms``. So for Plato, all that is real is ``the Ideas``. You could think of it almost as some place in space that exists that just hosts all of reality. The ``Ideas`` are the perfect mathematical blueprints of reality, and everything else is merely a copy. For example, a chair. You are probably sitting in a chair, but what makes it a chair as opposed to, say a desk? Well a chair has certain properties that belong to it, that a desk doesn`t (perhaps like a back to lean against). A chair has four legs, a seat, and a back, each leg is at a certain angle, and perhaps has a certain height, etc. For Plato, the chair you are sitting on isn`t real, but it is a copy of the ``Idea`` of a chair. The ``Idea`` of the chair is the blueprint and the chair you are sitting on is the manifestation of that idea.\\
+
+Well, for Object oriented programming, we also have blueprints, we call them ``classes``. The manifestations of those blueprints is what we call ``objects``.\\
+
+Object oriented programming (OOP for short) is probably the most widely used programming paradigm of our time due to its intuitiveness. OOP is simply a way or organizing your code so that you can take advantage of design principles that would allow for efficient code reuse and organization. Basically you write the blueprint and then create instances of that blueprint, each with it`s own copies of the properties and functionalities.\\
+
 \section{Classes (Video Series Lecture 40 and 41)}
+Classes are the blueprints of our objects. It`s in the class definition that we model the properties and functionalities of our objects. Let`s just look at an example of a class.
+\newpage
+\begin{lstlisting}
+class Square {
+  private int length;
+
+  Square(int l) {
+    length = l;
+  }
+
+  public int area() {
+    return length * length;
+  }
+
+  public int perimeter() {
+    return 4 * length;
+  }
+}
+\end{lstlisting}
+
+To create a class, you use the ``class`` keyword, followed by the name and curly brackets. Everything inside the curly brackets becomes the class definition and implementation. In this case, our class is called ``Square``. So what can we say about a square? Well, by definition, all the sides are the same length and there are four sides. We can create a property called 	``length`` to represent the length of one side of the square. Note that I made the ``length`` private. It is generally good practice to make the data members private whenever possible. This is because usually the internals of your class depend on the integrity of the data members. In this case we have two methods that use the data member ``length``. This Square example is so simple that it might not make sense, but imagine that you had data members that affect other things in your class. But you want your class to behave a certain way. If another programmer messes with some of the internals that affect the behaviour of your class, then he could potentially manipulate it to do things that it wasn`t designed to do. Therefore, to write secure, reliable code, it is good practice to hide that data members by using private and providing public methods for others to interact with your class.
 \section{Objects (Video Series Lecture 42 and 43)}
 \section{More Keywords (Video Series Lecture 44 - 47)}
 \subsection{static}
