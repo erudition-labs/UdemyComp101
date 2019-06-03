@@ -6,11 +6,13 @@ public class Universe {
     private final static int ALIVE = 1, DEAD = 0;
     private final static int LIVES = 1, DIES = 0;
     private int[][] universe;
+    private int generations;
 
     Universe(int width, int height) {
         WIDTH = width;
         HEIGHT = height;
         universe = randomSeed();
+        generations = 0;
     }
 
     public void epoch() {
@@ -22,10 +24,15 @@ public class Universe {
             }
         }
         universe = newPopulation;
+        generations++;
     }
 
     public int[][] getUniverse() {
         return universe;
+    }
+
+    public int getGeneration() {
+        return generations;
     }
 
     //public void setUniverse()

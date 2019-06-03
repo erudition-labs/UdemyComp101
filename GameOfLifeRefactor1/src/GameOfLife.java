@@ -2,8 +2,9 @@ public class GameOfLife {
     static boolean isRunning;
 
 
-    public static void render(int[][] world) {
+    public static void render(int[][] world, int generation) {
         clearScreen();
+        System.out.println("Generation: " + generation);
         for(int i=0; i<world.length; i++) {
             for(int j=0; j<world[i].length; j++) {
                 if(world[i][j] == 1) {
@@ -19,7 +20,7 @@ public class GameOfLife {
 
     public static void run(Universe universe) {
         while(isRunning) {
-            render(universe.getUniverse());
+            render(universe.getUniverse(), universe.getGeneration());
             universe.epoch();
 
             try {
