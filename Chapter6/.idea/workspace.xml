@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fece77d5-b564-4852-8faf-1a1b901818aa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../GameOfLifeClasses/GameOfLifeClasses.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameOfLife1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GameOfLife1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ATM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Banking.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,29 +13,25 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Banking.java">
+        <entry file="file://$PROJECT_DIR$/src/MyDate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+            <state relative-caret-position="435">
+              <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
               <folding>
-                <element signature="e#1342#1343#0" expanded="true" />
-                <element signature="e#1403#1404#0" expanded="true" />
+                <element signature="e#284#285#0" expanded="true" />
+                <element signature="e#310#311#0" expanded="true" />
+                <element signature="e#341#342#0" expanded="true" />
+                <element signature="e#368#369#0" expanded="true" />
+                <element signature="e#404#405#0" expanded="true" />
+                <element signature="e#431#432#0" expanded="true" />
+                <element signature="e#468#469#0" expanded="true" />
+                <element signature="e#521#522#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ATM.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="50" column="55" lean-forward="true" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -55,8 +51,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/ATM.java" />
         <option value="$PROJECT_DIR$/src/Banking.java" />
+        <option value="$PROJECT_DIR$/src/ATM.java" />
+        <option value="$PROJECT_DIR$/src/MyDate.java" />
       </list>
     </option>
   </component>
@@ -81,6 +78,11 @@
               <item name="Chapter6" type="b2602c69:ProjectViewProjectNode" />
               <item name="Chapter6" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Chapter6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Chapter6" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -88,6 +90,9 @@
       <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -101,7 +106,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.MyDate">
     <configuration name="ATM" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ATM" />
       <module name="Chapter6" />
@@ -109,8 +114,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyDate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyDate" />
+      <module name="Chapter6" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MyDate" />
         <item itemvalue="Application.ATM" />
       </list>
     </recent_temporary>
@@ -132,7 +145,7 @@
     <frame x="-5" y="0" width="1931" height="1086" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25239617" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25239617" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -141,7 +154,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32953367" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32953367" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -162,13 +175,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ATM.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="50" column="55" lean-forward="true" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Banking.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -176,6 +182,30 @@
           <folding>
             <element signature="e#1342#1343#0" expanded="true" />
             <element signature="e#1403#1404#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ATM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyDate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+          <folding>
+            <element signature="e#284#285#0" expanded="true" />
+            <element signature="e#310#311#0" expanded="true" />
+            <element signature="e#341#342#0" expanded="true" />
+            <element signature="e#368#369#0" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#431#432#0" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
+            <element signature="e#521#522#0" expanded="true" />
           </folding>
         </state>
       </provider>
