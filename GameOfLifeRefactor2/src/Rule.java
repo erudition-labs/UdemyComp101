@@ -9,6 +9,7 @@ public class Rule {
         this.requiredAliveNeighbors = requiredAliveNeighbors;
         this.operator = operator;
         this.resultingState = resultingState;
+        this.initialState = initialState;
     }
 
     public int getRadius() {
@@ -24,12 +25,12 @@ public class Rule {
 
             int livingNeighbors = countLivingNeighbors(currIsAlive, neighborhood);
             switch(operator) {
-                case "<": return requiredAliveNeighbors < livingNeighbors ? resultingState : CellState.NONE;
-                case "<=": return requiredAliveNeighbors <= livingNeighbors ? resultingState : CellState.NONE;
-                case ">": return requiredAliveNeighbors > livingNeighbors ? resultingState : CellState.NONE;
-                case ">=": return requiredAliveNeighbors >= livingNeighbors ? resultingState : CellState.NONE;
-                case "==": return requiredAliveNeighbors == livingNeighbors ? resultingState : CellState.NONE;
-                case "!=": return requiredAliveNeighbors != livingNeighbors ? resultingState : CellState.NONE;
+                case "<": return livingNeighbors < requiredAliveNeighbors ? resultingState : CellState.NONE;
+                case "<=": return livingNeighbors <= requiredAliveNeighbors ? resultingState : CellState.NONE;
+                case ">": return livingNeighbors > requiredAliveNeighbors ? resultingState : CellState.NONE;
+                case ">=": return livingNeighbors >= requiredAliveNeighbors ? resultingState : CellState.NONE;
+                case "==": return livingNeighbors == requiredAliveNeighbors ? resultingState : CellState.NONE;
+                case "!=": return livingNeighbors != requiredAliveNeighbors ? resultingState : CellState.NONE;
                 default: return  CellState.NONE;
             }
         } else {

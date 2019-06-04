@@ -23,6 +23,10 @@ public class Universe {
         this.rules = rules;
     }
 
+    public int getGenerations() {
+        return generations;
+    }
+
     private void randomSeed() {
         universe = new Cell[HEIGHT][WIDTH];
         Random rand = new Random();
@@ -32,6 +36,36 @@ public class Universe {
                 universe[i][j] = new Cell(rand.nextInt(2), i, j);
             }
         }
+    }
+
+    public void gliders() {
+        universe = new Cell[HEIGHT][WIDTH];
+        for(int i=0; i<universe.length; i++) {
+            for(int j=0; j<universe[i].length; j++) {
+                universe[i][j] = new Cell(CellState.DEAD, i , j);
+            }
+        }
+
+
+        universe[10+1][10+1].setState(CellState.ALIVE);
+        universe[10+2][10+1].setState(CellState.ALIVE);
+        universe[10+3][10+1].setState(CellState.ALIVE);
+        universe[10+1][10+2].setState(CellState.ALIVE);
+        universe[10+2][10+3].setState(CellState.ALIVE);
+
+
+        universe[HEIGHT-2][WIDTH-3].setState(CellState.ALIVE);
+        universe[HEIGHT-3][WIDTH-4].setState(CellState.ALIVE);
+        universe[HEIGHT-4][WIDTH-4].setState(CellState.ALIVE);
+        universe[HEIGHT-4][WIDTH-3].setState(CellState.ALIVE);
+        universe[HEIGHT-4][WIDTH-2].setState(CellState.ALIVE);
+
+
+        universe[HEIGHT-11][WIDTH-11].setState(CellState.ALIVE);
+        universe[HEIGHT-11][WIDTH-12].setState(CellState.ALIVE);
+        universe[HEIGHT-11][WIDTH-13].setState(CellState.ALIVE);
+        universe[HEIGHT-12][WIDTH-11].setState(CellState.ALIVE);
+        universe[HEIGHT-13][WIDTH-12].setState(CellState.ALIVE);
     }
 
     private boolean exists(int row, int col) {
@@ -73,11 +107,12 @@ public class Universe {
     }
 
     private Cell[] getNeighborhood(Cell cell, int radius) {
-        Cell[] neighbors = new Cell[radius * radius];
+        int block = (radius * 2) + 1;
+        Cell[] neighbors = new Cell[block * block];
         int index = 0;
 
-        for(int i=cell.getRow()-radius; i<cell.getRow()+radius; i++) {
-            for(int j=cell.getCol()-radius; i<cell.getCol()+radius; i++) {
+        for(int i=cell.getRow()-radius; i<=cell.getRow()+radius; i++) {
+            for(int j=cell.getCol()-radius; j<=cell.getCol()+radius; j++) {
                 if(exists(i, j)) {
                     neighbors[index] = universe[i][j];
                     index++;

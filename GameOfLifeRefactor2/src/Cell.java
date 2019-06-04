@@ -18,6 +18,9 @@ public class Cell {
     public CellState getState() {
         return currState;
     }
+    public void setState(CellState state) {
+        currState = state;
+    }
 
     public int getRow() {
         return row;
