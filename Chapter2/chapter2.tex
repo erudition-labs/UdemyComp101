@@ -129,7 +129,7 @@ We will not be covering propositional logic in this course other than to introdu
 \url {<https://www.iep.utm.edu/prop-log/#H1>}
 
 
-\section{Relational and Logical Operators (Video Series Lecture 7)}
+\section{Relational and Logical Operators}
 In this part of the series, we introduce the relational operators.  Interestingly enough, they are all the same operators that exist in basic mathematics. However, this would be our first experience with logic. By that I mean it will be helpful to start thinking of things in terms of true and false. For example, $1<2$ is a true statement. Whereas $5>1$ is a false statement. That`s all there really is to say about it.
 \subsection{The Relational Operators}
 \begin{center}
@@ -372,7 +372,7 @@ Now evaluate these statements \\
  
  We can consult the OR truth table to see that false $||$ false is false.
 
-\section{True and False (Video Series Lecture 8 and 9)}
+\section{True and False}
 In this section I would like to just do more examples.\\
 
 Let $i$ $=$ $5$ and $k$ $=$ $-2$\\
@@ -400,7 +400,7 @@ Therefore, ((($i$ $==$ $5$) $||$ ($i$ $<=$ $k$)) $\&\&$ $!$(($k$ $!=$ $i$) $\&\&
 
 
 
-\section{if Statement (Video Series Lecture 10 and 11)}
+\section{if Statement}
 We have talked about the relational and logical operators and their evaluations all for this moment (and others, but this moment first). These are your tools for evaluating conditions. We combine these conditions with statements. The first being the if statement.\\
 \subsection{if}
 \begin{lstlisting}
@@ -440,7 +440,7 @@ public class HelloWorld{
 }
 \end{lstlisting}
 
-\section{if-else and if- else if -else Statements (Video Series Lecture 12 and 13)}
+\section{if-else and if- else if -else Statements}
 \subsection{if else}
 Remember in the above section when I described the if-statement as follows: ``if the condition is true, then execute the next block of code, but if the condition is false, don`t execute the next block of code.`` Well what if we want to do something if the condition fails. What if we could reword it as follows: ``if the condition is true, then execute the next block of code, but if the condition is false, don`t execute the next block of code, but instead execute this other block of code``. What if we have a bunch of if statements and none of them pass, should we just do nothing? Or can we do something in the case that all conditions are evaluated to false?\\
 
@@ -517,7 +517,7 @@ public class Bank {
 \end{lstlisting}
 We have the same setup as before, accountAmount and withdrawRequestAmount are initialized to $\$1000$.
 The if statement evaluates to false, so it goes to the else if statement, which evaluates to true, so it prints out ``Heres your money, you have none left now`` and then skips the else. Note that we can have as many else if statements as we want. Once the program finds one that is true, it will skip the rest.
-\section{switch Statement (Video Series Lecture 14 and 15)}
+\section{switch Statement}
 The switch statement does the exact same thing that the if- else if- else statement does, just with different syntax. Sometimes if the the conditions are real simple, the if- else if- else gets annoying to write over and over, so you can use a switch statement which tends to be more compact. However, the case statements must be compile time constant. This means that they must be constant values such as numbers, strings, or other things. We cannot do relation comparison in a case statement except for ``==``. If we need to do relational comparison, we are stuck with if- else if- else statements.
 
 \subsection{switch}
