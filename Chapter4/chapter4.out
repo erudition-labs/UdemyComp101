@@ -3,15 +3,15 @@
 \BOOKMARK [2][-]{subsection.2.1}{Heap and Stack Memory\(Over Simplified\)}{section.2}% 3
 \BOOKMARK [2][-]{subsection.2.2}{The ``new`` keyword}{section.2}% 4
 \BOOKMARK [2][-]{subsection.2.3}{Declaration vs. Initialization}{section.2}% 5
-\BOOKMARK [1][-]{section.3}{Arrays \(Video Series Lecture 20 and 21\)}{}% 6
+\BOOKMARK [1][-]{section.3}{Arrays}{}% 6
 \BOOKMARK [2][-]{subsection.3.1}{What does an Array Look Like?}{section.3}% 7
 \BOOKMARK [2][-]{subsection.3.2}{Declaring/Initializing an Array}{section.3}% 8
 \BOOKMARK [2][-]{subsection.3.3}{Accessing Elements}{section.3}% 9
-\BOOKMARK [1][-]{section.4}{Looping Over Arrays \(Video Series Lecture 22 and 23\)}{}% 10
+\BOOKMARK [1][-]{section.4}{Looping Over Arrays}{}% 10
 \BOOKMARK [2][-]{subsection.4.1}{Increasing/Decreasing the size of an Array}{section.4}% 11
-\BOOKMARK [1][-]{section.5}{2D Arrays \(Video Series Lecture 24 and 25\)}{}% 12
+\BOOKMARK [1][-]{section.5}{2D Arrays}{}% 12
 \BOOKMARK [2][-]{subsection.5.1}{Another Example}{section.5}% 13
-\BOOKMARK [1][-]{section.6}{Sorting Arrays: Insertion Sort Algorithm \(Video Series Lecture 26 and 27\)}{}% 14
+\BOOKMARK [1][-]{section.6}{Sorting Arrays: Insertion Sort Algorithm}{}% 14
 \BOOKMARK [2][-]{subsection.6.1}{Notes abut efficiency on Insertion Sort}{section.6}% 15
 \BOOKMARK [1][-]{section.7}{Gotchas with Arrays}{}% 16
 \BOOKMARK [2][-]{subsection.7.1}{Array Index Out of Bounds}{section.7}% 17

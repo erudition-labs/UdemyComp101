@@ -143,7 +143,7 @@ In this case the first line declares the variable, and the second line initializ
 
 So declaration is used to tell the compiler to set aside memory and initialization puts that memory to use by giving the variable a value.
 
-\section{Arrays (Video Series Lecture 20 and 21)}
+\section{Arrays}
 This section introduces Arrays, which is a data structure that stores collections of elements. What is a data structure? Well a data structure is just a way organizing data by following certain rules when we store and retrieve it. By doing this, we can take advantage of the way the data is organized to make efficient algorithms. Some data structures are better at some things than others. It all depends on what you need to do. So when you take a data structures class (or look into it yourself) you will learn about different data structures (aka different ways of organizing data), their rules, their advantages, disadvantages and their best use cases.\\
 
 For example, if your program is going to be doing a lot of retrieving, there are data structures that are great for that. If you need to do a lot of saving or insertions, we have great data structures for that too, but those might also not be the best for retrieving. There are often trade-offs when using them and it is up to the programmer to decide which ones are best for your task. For now, you don`t really need to know what a data structure is other than it`s a way if organizing data. If you are taking computer science classes, then there are entire classes dedicated to that topic. All you need to know right now is that an array is used to store a collection of things of the same type and are extremely good for random access (meaning I can get any arbitrary piece of data at any time efficiently as long as I know where it is at in the array).
@@ -237,7 +237,7 @@ Then we do the next index position and set it to ``world``.
 
 Finally we just print the the element at index $0$ concatenated with an empty space (so we have a space between out words so it looks like ``hello world`` instead of ``helloworld``) which is also concatenated with ``world``. So the output of this program is ``hello world``.	
 
-\section{Looping Over Arrays (Video Series Lecture 22 and 23)}
+\section{Looping Over Arrays}
 Often times we need a way of looking at all of the elements in a given array (perhaps you are searching for an element for example or you would like to print out all of the elements). You can use the different types of loops to loop over the array. The most common loop used is the for loop since it maintains the current index with the current iteration. For example, If we want to search for an element in an array and print it out, we could do something like:
 
 \begin{lstlisting}
@@ -316,7 +316,7 @@ class Main {
 
 As you can imagine, this seems like it isn`t an efficient thing to do every time you need more space (I say seems like because this if you are familiar with how a vector works, this is exactly what it does and it turns out that doubling the size of the array each time usually means that it only has to do so a handful of times.). This is a limitation of arrays. They must be initialized with a fixed length. And the size must be known at the time of initialization. This means that I must know how big I need my array to be so that I can create one big enough. And if I need one bigger, then I must create an entirely new array.
 
-\section{2D Arrays (Video Series Lecture 24 and 25)}
+\section{2D Arrays}
 Imagine having the need to represent a 2 dimensional matrix to perform linear transformations on in a game. Or even a 3 dimensional matrix for 3d game transformations or translations. What if I need a collection where each collection stores more collections? Well, it turns out that you can have nested arrays. Arrays of Arrays of Arrays and Nth dimensional arrays. Usually, however, we never really need to go beyond two or three dimensions, especially since each dimension will most likely add a performance penalty in your code.\\
 
 All of the concepts are pretty much the same. We create them in the same way and index into them in a similar way. The only difference is that we need two indices now. Let`s take a look at this snippet of code where we create a $3$ x $3$ matrix and print it out:
@@ -378,7 +378,7 @@ The output of this program will look like:\\
 
 We will be getting more practice with 2d arrays when we do our project at the end of the next chapter. We will be using a 2d array to represent out 2d world.
 
-\section{Sorting Arrays: Insertion Sort Algorithm (Video Series Lecture 26 and 27)}
+\section{Sorting Arrays: Insertion Sort Algorithm}
 In this section we are going to implement a sorting algorithm called Insertion Sort. The idea is fairly simple. You split the array into two sections, one side is considered ``sorted`` and the other side is not. You then sort the array by inserting and element into the correct place on the sorted side, hence ``insertion sort``.\\
 
 In the video series, I linked a website that animates insertion sort \url{<https://visualgo.net/bn/sorting
