@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.3.9)  26 MAY 2019 13:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.3.9)  5 JUN 2019 15:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -550,7 +550,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 266.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 266.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 266.
 Package rerunfilecheck Info: File `chapter5.out' has not changed.
-(rerunfilecheck)             Checksum: B20F053023739F77615B532A34DFE434;1022.
+(rerunfilecheck)             Checksum: FC010E5BCE74AE3DB80D7A2EF79C8757;987.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 266.
  ) 
 Here is how much of TeX's memory you used:
@@ -570,7 +570,7 @@ sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmtt9.pfb>
-Output written on chapter5.pdf (10 pages, 172099 bytes).
+Output written on chapter5.pdf (10 pages, 170046 bytes).
 PDF statistics:
  293 PDF objects out of 1000 (max. 8388607)
  266 compressed objects within 3 object streams
