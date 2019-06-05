@@ -6,10 +6,10 @@
 \contentsline {paragraph}{If you would like to just skip to the more useful stuff about what a program is, look for the next bold face paragraph.}{2}{section*.2}% 
 \contentsline {paragraph}{HELLO, If you were skipping over all that other stuff that I said you could, now is a good time to start paying attention.}{5}{section*.3}% 
 \contentsline {subsection}{\numberline {2.4}The Structure of a Java program}{5}{subsection.2.4}% 
-\contentsline {section}{\numberline {3}Basic Syntax (Video Series Lecture 1 and 2)}{6}{section.3}% 
+\contentsline {section}{\numberline {3}Basic Syntax}{6}{section.3}% 
 \contentsline {subsection}{\numberline {3.1}Keywords}{6}{subsection.3.1}% 
-\contentsline {section}{\numberline {4}Variables and Types (Video Series Lecture 3 and 4)}{8}{section.4}% 
+\contentsline {section}{\numberline {4}Variables and Types}{8}{section.4}% 
 \contentsline {subsection}{\numberline {4.1}Java Types (Primitive Types and Strings)}{8}{subsection.4.1}% 
 \contentsline {subsection}{\numberline {4.2}Variables}{10}{subsection.4.2}% 
-\contentsline {section}{\numberline {5}Math in Code (Video Series Lecture 5)}{11}{section.5}% 
+\contentsline {section}{\numberline {5}Math in Code}{11}{section.5}% 
 \contentsline {subsubsection}{\numberline {5.0.1}A Note about $\%$}{12}{subsubsection.5.0.1}% 
