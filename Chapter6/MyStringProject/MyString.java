@@ -8,18 +8,20 @@ public class MyString {
     }
 
     public char charAt(int index) {
+        if(index >= length) {
+            return ' ';
+        }
         return string[index];
     }
 
     public MyString substring(int begin, int end) {
         char[] result = new char[end - begin];
-
         int counter = 0;
+
         for(int i=begin; i<end; i++) {
             result[counter] = string[i];
             counter++;
         }
-
         return new MyString(result);
     }
 
@@ -53,13 +55,14 @@ public class MyString {
     public static void main(String[] args) {
         MyString s1 = new MyString(new char[] {'a', 'B', 'C', 'd'});
         MyString s2 = new MyString(new char[] {'a', 'B', 'C', 'd', 'e', 'f'});
-        MyString s4 = new MyString(new char[] {'a', 'b', 'c', 'd'});
+        MyString s3 = new MyString(new char[] {'a', 'b', 'c', 'd'});
 
-        System.out.println(s1.charAt(2));
-        System.out.println(s1.toLowerCase().toString());
+        System.out.println(s1.charAt(4));
+        System.out.println(s3.toLowerCase().toString());
         System.out.println(s1.equals(s2));
-        System.out.println(s1.toLowerCase().equals(s4));
+        System.out.println(s1.toLowerCase().equals(s3.toLowerCase()));
         System.out.println(s2.substring(2, 4).toString());
 
     }
+
 }
