@@ -9,11 +9,18 @@ public class Animal {
         this.strength = strength;
     }
 
+    Animal() {
+        this.name = "Animal";
+        this.speed = 5.2;
+        this.strength = 6.8;
+    }
+
     protected void move() {
-        System.out.println("Animal Moving with speed " + speed);
+        System.out.println(name + " has moved at a speed of" + speed);
     }
 
     protected void attack() {
-        System.out.println("Animal Attacking with strength" + strength);
+        System.out.println(name + " attacked with strenght " + strength);
     }
+
 }

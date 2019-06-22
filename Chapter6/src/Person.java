@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -7,7 +6,7 @@ interface Loveable {
     public abstract void hugMe();
 };
 
-public class Person implements Loveable, Comparable<Person>{
+public class Person implements Loveable, Comparable<Person> {
      String name;
      String email;
     private  int weight;
@@ -40,23 +39,18 @@ public class Person implements Loveable, Comparable<Person>{
     }
 
     public static void main(String[] args) {
-         Person[] people = new Person[3];
-
-        Person p1 = new Person(
-                "billybo",
-                "jon@bob.com", 4);
-
         List<Person> list = new ArrayList<>();
-        list.add(p1);
+
         list.add(new Person(
-                "billybo",
-                "jon@bob.com", 2));
+                "Jow",
+                "jow@jow.com", 2));
         list.add(new Person(
-                "billybo",
-                "jon@bob.com", 23));
+                "Jowe",
+                "jowe@jow.com", 230));
+
         list.add(new Person(
-                "billybo",
-                "jon@bob.com", 200));
+                "Bill",
+                "Bill@jow.com", 200));
 
 
         for(Person p : list) {
@@ -64,13 +58,11 @@ public class Person implements Loveable, Comparable<Person>{
         }
         System.out.println();
         Collections.sort(list);
+
         for(Person p : list) {
             System.out.print(p.weight + " ");
         }
-
-
-
-
     }
+
 }
 
