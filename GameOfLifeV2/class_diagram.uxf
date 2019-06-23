@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>150</x>
+      <y>60</y>
+      <w>200</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>Cell
+--
+-row: int
+-col: int
+-currState: CellState
+--
++getRow(): int
++getCol(): int
++setState(state:CellState)
++getState(): CellState</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>190</x>
+      <y>280</y>
+      <w>120</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>CellState
+--
+DEAD: int = 0
+ALIVE: int = 1
+NONE: int = 2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>240</x>
+      <y>200</y>
+      <w>30</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>790</x>
+      <y>180</y>
+      <w>210</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>GameOfLife
+--
+_-isRunning: boolean_
+_-universe: Universe_
+--
+_+run(): void_
+_+render(): void_
+_+clearScreen(): void_
+_+main(args: String[]): void_
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>480</y>
+      <w>490</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>Rule
+--
+-radius: int
+-requiredLiveNeighbors: int
+-initialState: CellState
+-resultingState: CellState
+-operator: String
+--
++Rule(radius:int, requiredLiveNeighbors:int, operator:String, 
+initialState:CellState, resultingState:CellState): void
++getRadius(): int
++applyRule(curr:Cell, neighborhood:Cell[]): CellState
+-countLivingNeighbors(currIsAlive:boolean, neighborHood:Cell[]): int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>240</x>
+      <y>360</y>
+      <w>30</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>660</x>
+      <y>430</y>
+      <w>480</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>Universe
+--
+-universe: Cell[][]
+-width: int
+-height: int
+-generations: int
+-rules: Rule[]
+--
++Universe(height:int, width:int, seed:Cell[][], rules:Rule[]): void
++Universe(height:int, width:int, rules:Rule[]): void
++getGenerations(): int
+-randomSeed(): void
+-exists(row:int, col:int): boolean
++epoch(): void
+-fitness(cell:Cell): CellState
+-getNeighborhood(cell:Cell, radius:int): Cell[]
++toString(): String
++gliders(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>880</x>
+      <y>310</y>
+      <w>30</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>340</x>
+      <y>100</y>
+      <w>430</w>
+      <h>350</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>410.0;330.0;410.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>490</x>
+      <y>570</y>
+      <w>190</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>170.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
