@@ -1,8 +1,8 @@
 import java.util.Random;
 
 public class Universe {
-    private Cell[][] universe;
-    private int width, height;
+    protected Cell[][] universe;
+    protected int width, height;
     private int generations;
     private Rule[] rules;
 
@@ -17,8 +17,8 @@ public class Universe {
         this.height = height;
         this.width = width;
         //universe = seed;
-        //randomSeed();
-        gliders();
+        randomSeed();
+        //gliders();
         this.rules = rules;
     }
 

@@ -35,7 +35,7 @@ public class GameOfLife {
         rules[3] = new Rule(1, 2, "==", CellState.ALIVE, CellState.ALIVE);
         rules[4] = new Rule(1, 3, "==", CellState.ALIVE, CellState.ALIVE);
         //cerate universe
-        universe = new Universe(20, 100, rules);
+        universe = new ExpandableUniverse(20, 100, rules, new CellState[]{CellState.ALIVE});
         //run
         isRunning = true;
         run();
